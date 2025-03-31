@@ -1,0 +1,5 @@
+financialInstitutionId,codeChallenge,codeChallengeMethod,redirectUri,consentId,termsDate,termsVersion,comentario
+9888,Xmegaq5oIYNP_SddrmnE-NSvrGuDC3AfVnC3CartlbY,S256,https%3A%2F%2Finiciacionpagosopftest.achcolombia.com.co%3A8444%2Fcallback,a8ca63e1-5fb4-4d6e-9067-ade5c95d0098,2024-07-09T01%3A41%3A55.237Z,v1.1,Validar financialInstitutionId enviarlo errroneo
+null,Xmegaq5oIYNP_SddrmnE-NSvrGuDC3AfVnC3CartlbY,S256,https%3A%2F%2Finiciacionpagosopftest.achcolombia.com.co%3A8444%2Fcallback,a8ca63e1-5fb4-4d6e-9067-ade5c95d0098,2024-07-09T01%3A41%3A55.237Z,v1.1,Validar financialInstitutionId enviarlo null
+9111,Xmegaq5oIYNP_SddrmnE-NSvrGuDC3AfVnC3CartlbY,S234yDF,https%3A%2F%2Finiciacionpagosopftest.achcolombia.com.co%3A8444%2Fcallback,a8ca63e1-5fb4-4d6e-9067-ade5c95d0098,2024-07-09T01%3A41%3A55.237Z,v1.1,Validar codeChallengeMethod enviarlo errroneo
+9111,Xmegaq5oIYNP_SddrmnE-NSvrGuDC3AfVnC3CartlbY,null,https%3A%2F%2Finiciacionpagosopftest.achcolombia.com.co%3A8444%2Fcallback,a8ca63e1-5fb4-4d6e-9067-ade5c95d0098,2024-07-09T01%3A41%3A55.237Z,v1.1,Validar codeChallengeMethod enviarlo null

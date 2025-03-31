@@ -1,0 +1,247 @@
+{
+	"info": {
+		"_postman_id": "cf732e2b-259e-4032-83da-f0379357de98",
+		"name": "Crear consentimiento",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34505292"
+	},
+	"item": [
+		{
+			"name": "/account-access-consents",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Obtener la respuesta como JSON\r",
+							"let response = pm.response.json();\r",
+							"\r",
+							"// Extraer la URL de la respuesta\r",
+							"let agregationUrl = response.data.agregationUrl;\r",
+							"\r",
+							"// Usar una expresión regular para capturar el código después de \"consent?id=\"\r",
+							"let match = agregationUrl.match(/consent\\?id=([^&]+)/);\r",
+							"\r",
+							"if (match) {\r",
+							"    // Guardar el valor capturado en una variable de entorno\r",
+							"    let consentId = match[1];\r",
+							"    pm.environment.set(\"consentId\", consentId);\r",
+							"    console.log(\"Consent ID:\", consentId);\r",
+							"} else {\r",
+							"    console.log(\"No se encontró el Consent ID en la URL.\");\r",
+							"}\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Crear una nueva fecha\r",
+							"var fecha = new Date();\r",
+							"\r",
+							"// Formatear la fecha en el formato deseado (YYYY-MM-DDTHH:MM:SS)\r",
+							"var fechaFormateada = fecha.toISOString().slice(0, 19);\r",
+							"\r",
+							"// Guardar la fecha en una variable de entorno o local\r",
+							"pm.environment.set(\"$isoTimestamp\", fechaFormateada);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{access_token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "96ccdadf584efe6b6daa2c8467c0527a",
+						"type": "text"
+					},
+					{
+						"key": "x-fapi-interaction-id",
+						"value": "{{$randomUUID}}",
+						"type": "text"
+					},
+					{
+						"key": "x-fapi-auth-date",
+						"value": "2024-11-12T12:00:00",
+						"type": "text"
+					},
+					{
+						"key": "x-fapi-customer-ip",
+						"value": "{{$randomIP}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"financialInstitutionId\": \"374651\",\n    \"thirdPartyId\": \"e46cb409-5ebc-4dcc-b008-09966aa271d6\",\n    \"owner\": {\n        \"identificationType\": \"NI\",\n        \"identificationNumber\": \"90345827\"\n    },\n    \"expirationDateTime\": \"2024-07-09T01:41:55\",\n    \"transactionFromDateTime\": \"2024-07-09T01:41:55\",\n    \"transactionToDateTime\": \"2024-07-09T01:41:55\",\n    \"termsAcceptanceDateTime\": \"2024-07-09T01:41:55\",\n    \"privacyPolicyDateTime\": \"2024-07-09T01:41:55\",\n    \"url\": \"http://www.moni.com/result?consent_id=\",\n    \"name\": \"test ACE\",\n    \"thirdPartyTermsAcceptanceDateTime\": \"2024-07-09T01:41:55\",\n    \"thirdPartyTermsAcceptanceVersion\": \"v1\",\n    \"thirdPartyTreatmentPersonalDataVersion\": \"v1.1\",\n    \"thirdPartyTreatmentPersonalDataDatetime\": \"2024-07-09T01:41:55\",\n    \"permissions\": [\n        \"ReadAccountsBasic\",\n        \"ReadAccountsDetail\",\n        \"ReadBalances\",\n        \"ReadTransactionsBasic\",\n        \"ReadTransactionsDetail\"\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Url}}/account-access-consents",
+					"host": [
+						"{{Url}}"
+					],
+					"path": [
+						"account-access-consents"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/account-access-consents",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{agregatorToken}}",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "1c9287f179ce7ff3a817e9a1a88ce816",
+								"type": "text"
+							},
+							{
+								"key": "x-fapi-interaction-id",
+								"value": "{{$randomUUID}}",
+								"type": "text"
+							},
+							{
+								"key": "x-fapi-auth-date",
+								"value": "{{$isoTimestamp}}",
+								"type": "text"
+							},
+							{
+								"key": "x-fapi-customer-ip",
+								"value": "{{$randomIP}}",
+								"type": "text"
+							},
+							{
+								"key": "apim-debug",
+								"value": "true",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "86d42b0ff53e52cb642a2645ea05e52e=afe8386278723538743cea9524bcc06c",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"financialInstitutionId\": \"9111\",\n    \"thirdPartyId\": \"0a80040e-8f3a-10fd-818f-7d5b4d500000\",\n    \"owner\": {\n        \"identificationType\": \"CC\",\n        \"identificationNumber\": \"1023456789\"\n    },\n    \"expirationDateTime\": \"2024-07-09T01:41:55.237Z\",\n    \"transactionFromDateTime\": \"2024-07-09T01:41:55.237Z\",\n    \"transactionToDateTime\": \"2024-07-09T01:41:55.237Z\",\n    \"termsAcceptanceDateTime\": \"2024-07-09T01:41:55.237Z\",\n    \"privacyPolicyDateTime\": \"2024-07-09T01:41:55.237Z\",\n    \"termsAcceptanceVersion\": \"v1.1\",\n    \"url\": \"http://www.moni.com/result?consent_id=\",\n    \"permissions\": [\n        \"ReadAccountsBasic\",\n        \"ReadAccountsDetail\",\n        \"ReadBalances\",\n        \"ReadTransactionsBasic\",\n        \"ReadTransactionsDetail\"\n    ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://apic-mtls-gw-gateway-cp4i-apic.apps.devach.achopenshift.itac.com.co/pub/agregation/agregation/v1/account-access-consents",
+							"protocol": "https",
+							"host": [
+								"apic-mtls-gw-gateway-cp4i-apic",
+								"apps",
+								"devach",
+								"achopenshift",
+								"itac",
+								"com",
+								"co"
+							],
+							"path": [
+								"pub",
+								"agregation",
+								"agregation",
+								"v1",
+								"account-access-consents"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "x-original-http-status-code",
+							"value": "200"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json;charset=utf-8"
+						},
+						{
+							"key": "server",
+							"value": "IBM App Connect Enterprise"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 04 Sep 2024 20:59:34 GMT"
+						},
+						{
+							"key": "set-cookie",
+							"value": "930bbdcb422702e9535563b159838474=95a62e7bdcda933af3a6ca956f8d1506; path=/; HttpOnly"
+						},
+						{
+							"key": "X-Global-Transaction-ID",
+							"value": "e84e32dc66d8ca36000558d3"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "name=default,100;"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "name=default,97;"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": {\n        \"messageUid\": \"e64475bd-718a-4513-a0a7-1263e5ef4dae\",\n        \"requestDt\": \"2024-09-04T15:59:34.127Z\",\n        \"requestAppId\": null\n    },\n    \"data\": {\n        \"thirdPartyId\": \"0a80040e-8f3a-10fd-818f-7d5b4d500000\",\n        \"agregationUrl\": \"https://front-pvb-agregacion-agregacion.apps.devach.achopenshift.itac.com.co/consent?id=830cfa2a-310c-48ae-bc68-934a2a969d7d\"\n    }\n}"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,15 @@
+{
+    "Connection": "Keep-Alive",
+    "Transfer-Encoding": "chunked",
+    "X-Original-HTTP-Status-Code": "200",
+    "Content-Type": "application/json;charset=utf-8",
+    "Server": "IBM App Connect Enterprise",
+    "Date": "Wed, 20 Nov 2024 20:54:04 GMT",
+    "Strict-Transport-Security": "max-age=31536000",
+    "X-Global-Transaction-ID": "27d9f3ea673e4c6c000252c0",
+    "X-RateLimit-Limit": "name=Default rate-limit,1;",
+    "X-RateLimit-Remaining": "name=Default rate-limit,0;",
+    "X-BurstLimit-Limit": "name=Default burst-limit,10;",
+    "X-BurstLimit-Remaining": "name=Default burst-limit,8;",
+    "Content-Encoding": "gzip"
+}

@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "8e4949f2-ef14-4f5e-921e-226b9c3b5057",
+		"name": "PUT Errores 400",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34505292"
+	},
+	"item": [
+		{
+			"name": "PUT Codigo 400",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 422\", function () {\r",
+							"    pm.response.to.have.status(422);\r",
+							"});\r",
+							"// Imprimir el comentario en la consola de Newman\r",
+							"console.log(\"Comentario del caso de prueba: \", pm.iterationData.get(\"comentario\"));"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiQTEyOEtXIiwiY3R5IjoiSldUIn0.EJ5hcrXyVsq2k28waXP7kQHgIC2pEBH7uQmMk2FDWmlG_rh4PmeuPQ.cEiHAYN9u0xqncvMky4iQg.yYNxv67zV8_TtEZuJmnZCWS6nU0tJLUMzwFmLr8WdFlbkGVGmlEqPKPtT7LIDbgYylJg4tkGwFZ4NQ2sP4EOje6iqbiWV4Ih8cY0HKpjhfb0lqXgEvvFfuCkrfhYj9zgll3Wot-4f3gkOERglJj7V6UldGi8PoMsIqK0Qq7YJDmCFf-jIqJxupeFdbYvvCMw3X40Y43A-zbz3abxfMvwKHsGdV1NIv2ICp1t9g-2b3h-UcaefM78shtjkUZBeULz71JVln2PVyZ8p8ZzZoZs5QrAw4OSZKVb-weKBYkmR1cSw8FR_Rlsk4EcUnV-V9UotiE9KJMA70TSqozFfiFkKbkTYAy2FUuS5Tg1DlQClxqTCDkMe6DJhoqBUMIZ5SmpglX1ZC-avg6YnYog3F142Yp4cUy03IZIYW0mlDuZntG60wusAy-4b2alryntkBZ4XygQ0kHCFScZ69NLAo7hgKsCZ4lHPSw6wBQkSO5IHkaGSv-DYpMTy52v8Qu1DwyLDl_D7ghTSdBlIE3cWlEmfD_03inI4g-8ULhGm12oYm2X1va0CAvNWBZCFQOKxLD_B7JFYQs4_wUqmBBrY2QSAx5TiDMTzUIwt-SfpXz-omldJKcRQtV-YM3axGuJZV8iYkdvelm7gyEE_dcdyxhrMNLE-bG5RpgBadr2tRb0OwyRvuwc123ouvDAYfTNIPj9V7zQbqSMFjxE_awqcApfoZdA_Cir3e1thu2sbnQNZ_FO1QuOLXNIE6CcgGwHRXAxA_wcjui9JCDpWQ3z0bseTADpLg7_BGFOIWgzPwEdbp_9JwJd_f-UZWFHxKsGkacnCs444JdfnCuqFw2QMT1zAVDr0urql4on-YcmHidsExMwUFlHxvsKN8uy6hCRiw0FJTNKvgxuXmEcJ5Y4c9uN3Hug5StheG5ltllorlf_LYYn5SdNYMyeCsDGUnfPVQZ50RNjYDqD0RWlcy1bWWLzl2lzOpXxqfH7AF-uop5NUHxiXc0oZK7rrGoScV5fu7TfL65FLiHwaGk8xtn3-wodh16RmXE-kjH1j3E2KpZ0hbQbAqFZJgJSXgj3Cx3Kqk7cRc0nVOSKw2Q7V8c4ALiruap5E5WRSURigEGvP6A5oTNow6xh1fDMEZdfKZzMzLGmkpEbtZXnKzCdLLMdXHfjYM_0QbrUNN57oNYiTKQn7FBfqPir1ea88YTzmfMML3-XtQmvi97t7SAxMQhsyVY-WGWFw7_52S4RTRm__XMrZBXPHOM6eggWesd5fuBlxpSQu0qk_2x1ggikH9DeFZIOhg.eSHYgJ1__KQaNm7k8nurfQ",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "x-fapi-interaction-id",
+						"value": "1481a5b8-3427-43c3-a10d-1c154d1b42c9",
+						"type": "text"
+					},
+					{
+						"key": "x-fapi-auth-date",
+						"value": "2024-08-08T13:41:35",
+						"type": "text"
+					},
+					{
+						"key": "x-fapi-customer-ip",
+						"value": "177.172.37.32",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "722183cfd9be050b9564ecbc9c0aaf40",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"codeVerifier\": {{codeVerifier}},\n    \"redirectUri\": {{redirectUri}},\n    \"consentIdFI\": {{consentIdFI}},\n    \"response\": {{response}}\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co/ach/pib/autorizador/v1/account-access-consents/:consentId",
+					"protocol": "https",
+					"host": [
+						"rgw-of",
+						"apps",
+						"awsprbcluo",
+						"awsocpprb",
+						"ach",
+						"interno",
+						"com",
+						"co"
+					],
+					"path": [
+						"ach",
+						"pib",
+						"autorizador",
+						"v1",
+						"account-access-consents",
+						":consentId"
+					],
+					"variable": [
+						{
+							"key": "consentId",
+							"value": "1b89849c-ca2c-4c57-82d2-28e229bd9968"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "PUT account-access-consent",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiQTEyOEtXIiwiY3R5IjoiSldUIn0.EJ5hcrXyVsq2k28waXP7kQHgIC2pEBH7uQmMk2FDWmlG_rh4PmeuPQ.cEiHAYN9u0xqncvMky4iQg.yYNxv67zV8_TtEZuJmnZCWS6nU0tJLUMzwFmLr8WdFlbkGVGmlEqPKPtT7LIDbgYylJg4tkGwFZ4NQ2sP4EOje6iqbiWV4Ih8cY0HKpjhfb0lqXgEvvFfuCkrfhYj9zgll3Wot-4f3gkOERglJj7V6UldGi8PoMsIqK0Qq7YJDmCFf-jIqJxupeFdbYvvCMw3X40Y43A-zbz3abxfMvwKHsGdV1NIv2ICp1t9g-2b3h-UcaefM78shtjkUZBeULz71JVln2PVyZ8p8ZzZoZs5QrAw4OSZKVb-weKBYkmR1cSw8FR_Rlsk4EcUnV-V9UotiE9KJMA70TSqozFfiFkKbkTYAy2FUuS5Tg1DlQClxqTCDkMe6DJhoqBUMIZ5SmpglX1ZC-avg6YnYog3F142Yp4cUy03IZIYW0mlDuZntG60wusAy-4b2alryntkBZ4XygQ0kHCFScZ69NLAo7hgKsCZ4lHPSw6wBQkSO5IHkaGSv-DYpMTy52v8Qu1DwyLDl_D7ghTSdBlIE3cWlEmfD_03inI4g-8ULhGm12oYm2X1va0CAvNWBZCFQOKxLD_B7JFYQs4_wUqmBBrY2QSAx5TiDMTzUIwt-SfpXz-omldJKcRQtV-YM3axGuJZV8iYkdvelm7gyEE_dcdyxhrMNLE-bG5RpgBadr2tRb0OwyRvuwc123ouvDAYfTNIPj9V7zQbqSMFjxE_awqcApfoZdA_Cir3e1thu2sbnQNZ_FO1QuOLXNIE6CcgGwHRXAxA_wcjui9JCDpWQ3z0bseTADpLg7_BGFOIWgzPwEdbp_9JwJd_f-UZWFHxKsGkacnCs444JdfnCuqFw2QMT1zAVDr0urql4on-YcmHidsExMwUFlHxvsKN8uy6hCRiw0FJTNKvgxuXmEcJ5Y4c9uN3Hug5StheG5ltllorlf_LYYn5SdNYMyeCsDGUnfPVQZ50RNjYDqD0RWlcy1bWWLzl2lzOpXxqfH7AF-uop5NUHxiXc0oZK7rrGoScV5fu7TfL65FLiHwaGk8xtn3-wodh16RmXE-kjH1j3E2KpZ0hbQbAqFZJgJSXgj3Cx3Kqk7cRc0nVOSKw2Q7V8c4ALiruap5E5WRSURigEGvP6A5oTNow6xh1fDMEZdfKZzMzLGmkpEbtZXnKzCdLLMdXHfjYM_0QbrUNN57oNYiTKQn7FBfqPir1ea88YTzmfMML3-XtQmvi97t7SAxMQhsyVY-WGWFw7_52S4RTRm__XMrZBXPHOM6eggWesd5fuBlxpSQu0qk_2x1ggikH9DeFZIOhg.eSHYgJ1__KQaNm7k8nurfQ",
+								"type": "text",
+								"disabled": true
+							},
+							{
+								"key": "x-fapi-interaction-id",
+								"value": "1481a5b8-3427-43c3-a10d-1c154d1b42c9",
+								"type": "text"
+							},
+							{
+								"key": "x-fapi-auth-date",
+								"value": "2024-08-08T13:41:35",
+								"type": "text"
+							},
+							{
+								"key": "x-fapi-customer-ip",
+								"value": "177.172.37.32",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "722183cfd9be050b9564ecbc9c0aaf40",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"codeVerifier\": {{codeVerifier}},\n    \"redirectUri\": {{redirectUri}},\n    \"consentIdFI\": {{consentIdFI}},\n    \"response\": {{response}}\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co/ach/pib/autorizador/v1/account-access-consents/:consentId",
+							"protocol": "https",
+							"host": [
+								"rgw-of",
+								"apps",
+								"awsprbcluo",
+								"awsocpprb",
+								"ach",
+								"interno",
+								"com",
+								"co"
+							],
+							"path": [
+								"ach",
+								"pib",
+								"autorizador",
+								"v1",
+								"account-access-consents",
+								":consentId"
+							],
+							"variable": [
+								{
+									"key": "consentId",
+									"value": "1b89849c-ca2c-4c57-82d2-28e229bd9968"
+								}
+							]
+						}
+					},
+					"_postman_previewlanguage": "",
+					"header": "",
+					"cookie": [],
+					"body": ""
+				}
+			]
+		}
+	]
+}

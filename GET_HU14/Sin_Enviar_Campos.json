@@ -1,0 +1,395 @@
+{
+	"info": {
+		"_postman_id": "c6cf4e86-0652-4535-b435-09dbe1cda270",
+		"name": "Sin Enviar Campos Header",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31315694",
+		"_collection_link": "https://warped-rocket-761289.postman.co/workspace/81e524ff-75cf-4572-9434-5fb1db1b5b7e/collection/31315694-c6cf4e86-0652-4535-b435-09dbe1cda270?action=share&source=collection_link&creator=31315694"
+	},
+	"item": [
+		{
+			"name": "Sin Enviar x-fapi-interaction-id",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "x-fapi-interaction-id",
+						"value": "1481a5b8-3427-43c3-a10d-1c154d1b42c9",
+						"disabled": true
+					},
+					{
+						"key": "x-fapi-auth-date",
+						"value": "2024-11-12T12:00:00"
+					},
+					{
+						"key": "x-fapi-customer-ip",
+						"value": "177.172.37.32"
+					},
+					{
+						"key": "x-api-key",
+						"value": "722183cfd9be050b9564ecbc9c0aaf40"
+					}
+				],
+				"url": {
+					"raw": "https://rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co/ach/pib/autorizador/v1/redirect-auth-url?financialInstitutionId=9111&codeChallenge=Xmegaq5oIYNP_SddrmnE-NSvrGuDC3AfVnC3CartlbY&codeChallengeMethod=S256&redirectUri=https%3A%2F%2Finiciacionpagosopftest.achcolombia.com.co%3A8444%2Fcallback&consentId=a8ca63e1-5fb4-4d6e-9067-ade5c95d0098&termsDate=2024-07-09T01%3A41%3A55.237Z&termsVersion=v1.1",
+					"protocol": "https",
+					"host": [
+						"rgw-of",
+						"apps",
+						"awsprbcluo",
+						"awsocpprb",
+						"ach",
+						"interno",
+						"com",
+						"co"
+					],
+					"path": [
+						"ach",
+						"pib",
+						"autorizador",
+						"v1",
+						"redirect-auth-url"
+					],
+					"query": [
+						{
+							"key": "financialInstitutionId",
+							"value": "9111"
+						},
+						{
+							"key": "codeChallenge",
+							"value": "Xmegaq5oIYNP_SddrmnE-NSvrGuDC3AfVnC3CartlbY"
+						},
+						{
+							"key": "codeChallengeMethod",
+							"value": "S256"
+						},
+						{
+							"key": "redirectUri",
+							"value": "https%3A%2F%2Finiciacionpagosopftest.achcolombia.com.co%3A8444%2Fcallback"
+						},
+						{
+							"key": "consentId",
+							"value": "a8ca63e1-5fb4-4d6e-9067-ade5c95d0098"
+						},
+						{
+							"key": "termsDate",
+							"value": "2024-07-09T01%3A41%3A55.237Z"
+						},
+						{
+							"key": "termsVersion",
+							"value": "v1.1"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co/ach/pib/autorizador/v1/redirect-auth-url?financialInstitutionId=9111&codeChallenge=Xmegaq5oIYNP_SddrmnE-NSvrGuDC3AfVnC3CartlbY&codeChallengeMethod=S256&redirectUri=https%3A%2F%2Finiciacionpagosopftest.achcolombia.com.co%3A8444%2Fcallback&consentId=a8ca63e1-5fb4-4d6e-9067-ade5c95d0098&termsDate=2024-07-09T01%3A41%3A55.237Z&termsVersion=v1.1' \\\n--header 'Accept: application/json' \\\n--header 'x-fapi-interaction-id: 1481a5b8-3427-43c3-a10d-1c154d1b42c9' \\\n--header 'x-fapi-auth-date: 2024-11-12T12:00:00' \\\n--header 'x-fapi-customer-ip: 177.172.37.32' \\\n--header 'x-api-key: 722183cfd9be050b9564ecbc9c0aaf40'"
+			},
+			"response": []
+		},
+		{
+			"name": "Sin Enviar x-fapi-auth-date",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "x-fapi-interaction-id",
+						"value": "1481a5b8-3427-43c3-a10d-1c154d1b42c9"
+					},
+					{
+						"key": "x-fapi-auth-date",
+						"value": "2024-11-12T12:00:00",
+						"disabled": true
+					},
+					{
+						"key": "x-fapi-customer-ip",
+						"value": "177.172.37.32"
+					},
+					{
+						"key": "x-api-key",
+						"value": "722183cfd9be050b9564ecbc9c0aaf40"
+					}
+				],
+				"url": {
+					"raw": "https://rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co/ach/pib/autorizador/v1/redirect-auth-url?financialInstitutionId=9111&codeChallenge=Xmegaq5oIYNP_SddrmnE-NSvrGuDC3AfVnC3CartlbY&codeChallengeMethod=S256&redirectUri=https%3A%2F%2Finiciacionpagosopftest.achcolombia.com.co%3A8444%2Fcallback&consentId=a8ca63e1-5fb4-4d6e-9067-ade5c95d0098&termsDate=2024-07-09T01%3A41%3A55.237Z&termsVersion=v1.1",
+					"protocol": "https",
+					"host": [
+						"rgw-of",
+						"apps",
+						"awsprbcluo",
+						"awsocpprb",
+						"ach",
+						"interno",
+						"com",
+						"co"
+					],
+					"path": [
+						"ach",
+						"pib",
+						"autorizador",
+						"v1",
+						"redirect-auth-url"
+					],
+					"query": [
+						{
+							"key": "financialInstitutionId",
+							"value": "9111"
+						},
+						{
+							"key": "codeChallenge",
+							"value": "Xmegaq5oIYNP_SddrmnE-NSvrGuDC3AfVnC3CartlbY"
+						},
+						{
+							"key": "codeChallengeMethod",
+							"value": "S256"
+						},
+						{
+							"key": "redirectUri",
+							"value": "https%3A%2F%2Finiciacionpagosopftest.achcolombia.com.co%3A8444%2Fcallback"
+						},
+						{
+							"key": "consentId",
+							"value": "a8ca63e1-5fb4-4d6e-9067-ade5c95d0098"
+						},
+						{
+							"key": "termsDate",
+							"value": "2024-07-09T01%3A41%3A55.237Z"
+						},
+						{
+							"key": "termsVersion",
+							"value": "v1.1"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co/ach/pib/autorizador/v1/redirect-auth-url?financialInstitutionId=9111&codeChallenge=Xmegaq5oIYNP_SddrmnE-NSvrGuDC3AfVnC3CartlbY&codeChallengeMethod=S256&redirectUri=https%3A%2F%2Finiciacionpagosopftest.achcolombia.com.co%3A8444%2Fcallback&consentId=a8ca63e1-5fb4-4d6e-9067-ade5c95d0098&termsDate=2024-07-09T01%3A41%3A55.237Z&termsVersion=v1.1' \\\n--header 'Accept: application/json' \\\n--header 'x-fapi-interaction-id: 1481a5b8-3427-43c3-a10d-1c154d1b42c9' \\\n--header 'x-fapi-auth-date: 2024-11-12T12:00:00' \\\n--header 'x-fapi-customer-ip: 177.172.37.32' \\\n--header 'x-api-key: 722183cfd9be050b9564ecbc9c0aaf40'"
+			},
+			"response": []
+		},
+		{
+			"name": "Sin Enviar x-fapi-customer-ip",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "x-fapi-interaction-id",
+						"value": "1481a5b8-3427-43c3-a10d-1c154d1b42c9"
+					},
+					{
+						"key": "x-fapi-auth-date",
+						"value": "2024-11-12T12:00:00"
+					},
+					{
+						"key": "x-fapi-customer-ip",
+						"value": "177.172.37.32",
+						"disabled": true
+					},
+					{
+						"key": "x-api-key",
+						"value": "722183cfd9be050b9564ecbc9c0aaf40"
+					}
+				],
+				"url": {
+					"raw": "https://rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co/ach/pib/autorizador/v1/redirect-auth-url?financialInstitutionId=9111&codeChallenge=Xmegaq5oIYNP_SddrmnE-NSvrGuDC3AfVnC3CartlbY&codeChallengeMethod=S256&redirectUri=https%3A%2F%2Finiciacionpagosopftest.achcolombia.com.co%3A8444%2Fcallback&consentId=a8ca63e1-5fb4-4d6e-9067-ade5c95d0098&termsDate=2024-07-09T01%3A41%3A55.237Z&termsVersion=v1.1",
+					"protocol": "https",
+					"host": [
+						"rgw-of",
+						"apps",
+						"awsprbcluo",
+						"awsocpprb",
+						"ach",
+						"interno",
+						"com",
+						"co"
+					],
+					"path": [
+						"ach",
+						"pib",
+						"autorizador",
+						"v1",
+						"redirect-auth-url"
+					],
+					"query": [
+						{
+							"key": "financialInstitutionId",
+							"value": "9111"
+						},
+						{
+							"key": "codeChallenge",
+							"value": "Xmegaq5oIYNP_SddrmnE-NSvrGuDC3AfVnC3CartlbY"
+						},
+						{
+							"key": "codeChallengeMethod",
+							"value": "S256"
+						},
+						{
+							"key": "redirectUri",
+							"value": "https%3A%2F%2Finiciacionpagosopftest.achcolombia.com.co%3A8444%2Fcallback"
+						},
+						{
+							"key": "consentId",
+							"value": "a8ca63e1-5fb4-4d6e-9067-ade5c95d0098"
+						},
+						{
+							"key": "termsDate",
+							"value": "2024-07-09T01%3A41%3A55.237Z"
+						},
+						{
+							"key": "termsVersion",
+							"value": "v1.1"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co/ach/pib/autorizador/v1/redirect-auth-url?financialInstitutionId=9111&codeChallenge=Xmegaq5oIYNP_SddrmnE-NSvrGuDC3AfVnC3CartlbY&codeChallengeMethod=S256&redirectUri=https%3A%2F%2Finiciacionpagosopftest.achcolombia.com.co%3A8444%2Fcallback&consentId=a8ca63e1-5fb4-4d6e-9067-ade5c95d0098&termsDate=2024-07-09T01%3A41%3A55.237Z&termsVersion=v1.1' \\\n--header 'Accept: application/json' \\\n--header 'x-fapi-interaction-id: 1481a5b8-3427-43c3-a10d-1c154d1b42c9' \\\n--header 'x-fapi-auth-date: 2024-11-12T12:00:00' \\\n--header 'x-fapi-customer-ip: 177.172.37.32' \\\n--header 'x-api-key: 722183cfd9be050b9564ecbc9c0aaf40'"
+			},
+			"response": []
+		},
+		{
+			"name": "Sin Enviar x-api-key",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "x-fapi-interaction-id",
+						"value": "1481a5b8-3427-43c3-a10d-1c154d1b42c9"
+					},
+					{
+						"key": "x-fapi-auth-date",
+						"value": "2024-11-12T12:00:00"
+					},
+					{
+						"key": "x-fapi-customer-ip",
+						"value": "177.172.37.32"
+					},
+					{
+						"key": "x-api-key",
+						"value": "722183cfd9be050b9564ecbc9c0aaf40",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co/ach/pib/autorizador/v1/redirect-auth-url?financialInstitutionId=9111&codeChallenge=Xmegaq5oIYNP_SddrmnE-NSvrGuDC3AfVnC3CartlbY&codeChallengeMethod=S256&redirectUri=https%3A%2F%2Finiciacionpagosopftest.achcolombia.com.co%3A8444%2Fcallback&consentId=a8ca63e1-5fb4-4d6e-9067-ade5c95d0098&termsDate=2024-07-09T01%3A41%3A55.237Z&termsVersion=v1.1",
+					"protocol": "https",
+					"host": [
+						"rgw-of",
+						"apps",
+						"awsprbcluo",
+						"awsocpprb",
+						"ach",
+						"interno",
+						"com",
+						"co"
+					],
+					"path": [
+						"ach",
+						"pib",
+						"autorizador",
+						"v1",
+						"redirect-auth-url"
+					],
+					"query": [
+						{
+							"key": "financialInstitutionId",
+							"value": "9111"
+						},
+						{
+							"key": "codeChallenge",
+							"value": "Xmegaq5oIYNP_SddrmnE-NSvrGuDC3AfVnC3CartlbY"
+						},
+						{
+							"key": "codeChallengeMethod",
+							"value": "S256"
+						},
+						{
+							"key": "redirectUri",
+							"value": "https%3A%2F%2Finiciacionpagosopftest.achcolombia.com.co%3A8444%2Fcallback"
+						},
+						{
+							"key": "consentId",
+							"value": "a8ca63e1-5fb4-4d6e-9067-ade5c95d0098"
+						},
+						{
+							"key": "termsDate",
+							"value": "2024-07-09T01%3A41%3A55.237Z"
+						},
+						{
+							"key": "termsVersion",
+							"value": "v1.1"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co/ach/pib/autorizador/v1/redirect-auth-url?financialInstitutionId=9111&codeChallenge=Xmegaq5oIYNP_SddrmnE-NSvrGuDC3AfVnC3CartlbY&codeChallengeMethod=S256&redirectUri=https%3A%2F%2Finiciacionpagosopftest.achcolombia.com.co%3A8444%2Fcallback&consentId=a8ca63e1-5fb4-4d6e-9067-ade5c95d0098&termsDate=2024-07-09T01%3A41%3A55.237Z&termsVersion=v1.1' \\\n--header 'Accept: application/json' \\\n--header 'x-fapi-interaction-id: 1481a5b8-3427-43c3-a10d-1c154d1b42c9' \\\n--header 'x-fapi-auth-date: 2024-11-12T12:00:00' \\\n--header 'x-fapi-customer-ip: 177.172.37.32' \\\n--header 'x-api-key: 722183cfd9be050b9564ecbc9c0aaf40'"
+			},
+			"response": []
+		}
+	]
+}

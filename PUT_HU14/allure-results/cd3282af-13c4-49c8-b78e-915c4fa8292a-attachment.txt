@@ -1,0 +1,1 @@
+{"meta":{"messageUid":"1481a5b8-3427-43c3-a10d-1c154d1b42c9","requestDate":"2024-11-22T15:29:48.207Z","requestAppId":null},"statusCode":422,"statusDesc":"Unprocessable Entity","errors":[{"code":"422","detail":"El campo redirectUri es requerido"}]}

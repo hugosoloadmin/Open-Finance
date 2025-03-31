@@ -1,0 +1,90 @@
+{
+	"info": {
+		"_postman_id": "21afb837-c29e-4307-ad95-b6966fd058d5",
+		"name": "Errores 400",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29460625",
+		"_collection_link": "https://red-satellite-829132.postman.co/workspace/Finance-automatizacion~0b159870-f441-4137-ade7-cda25e7bab86/collection/29460625-21afb837-c29e-4307-ad95-b6966fd058d5?action=share&source=collection_link&creator=29460625"
+	},
+	"item": [
+		{
+			"name": "Token Codigos 400",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"\r",
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});\r",
+							"\r",
+							"// Imprimir el comentario en la consola de Newman\r",
+							"console.log(\"Comentario del caso de prueba: \", pm.iterationData.get(\"comentario\"));"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"tlsDisabledProtocols": []
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "moniJWT",
+							"type": "text"
+						},
+						{
+							"key": "client_assertion_type",
+							"value": "urn:ietf:params:oauth:client-assertion-type:jwt-bearer",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "{{grant_type}}",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "{{scope}}",
+							"type": "text"
+						},
+						{
+							"key": "client_assertion",
+							"value": "{{client_assertion}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{Base-url}}",
+					"host": [
+						"{{Base-url}}"
+					]
+				},
+				"description": "Generated from cURL: curl --location '\nhttps://agregacion.itac.co:8447/realms/agregacion/protocol/openid-connect/token'\n\\\n--header 'Content-Type: application/x-www-form-urlencoded' \\\n--header 'Cookie: 8c3c29440ccad7f932d0fc6703d6c5ab=8c040b0ecdbb695e815e9a648f8ad69c' \\\n--data-urlencode 'client_id=moniJWT' \\\n--data-urlencode 'client_assertion_type=urn:ietf:params:oauth:client-assertion-type:jwt-bearer' \\\n--data-urlencode 'grant_type=client_credentials' \\\n--data-urlencode 'scope=banks.read' \\\n--data-urlencode 'client_assertion=eyJraWQiOiI2NjRkY2U5Zi0zODI4LTQ3NmEtYTUyOC1lMTRkNGRjNWZhN2UiLCJhbGciOiJQUzI1NiJ9.eyJpYXQiOjE3Mjk4OTU4MjIsImlzcyI6Im1vbmlKV1QiLCJzdWIiOiJtb25pSldUIiwiYXVkIjoiaHR0cHM6Ly9hZ3JlZ2FjaW9uLml0YWMuY286ODQ0Ny9yZWFsbXMvYWdyZWdhY2lvbi9wcm90b2NvbC9vcGVuaWQtY29ubmVjdC90b2tlbiIsImV4cCI6NDEwMjQ0NDc5OSwianRpIjoiZGUwNmVmNmItZjlhZS00NGE2LWE1Y2UtNzIyOWJkZDMxNzdhIn0.Vdr6GBw3WWD5pSTIm9COHC7wZP6Zt54OlJKzpTXkmyNTXXtaeCFnqPz81eWNxIxgoRzyiLt0QaQ2qdi_prAEWUfYBMMR_rI8VlB9dzuM5EQLbXJq28K4VOMSET2PpEm14GA46iH1LD9phP0DlduZNweI0c7fWyWcMGb1q5xkkPxj4Cvx2i0gcKi-Vc8xjLiDO8Ic6AyWwx0-LmPu76yCUM7xz49ro7qSU4qFPSdeWtr-j8n_Vk9uyNkdDUOE-Th60c_OdJLjgDGCTPWgg9opXrbHvAexGq5xdBpW-TPm4IHbVd5BMJnJIFNpzjNw8Zl3M30lQhbOd5Ydeu9fEIGSFg'"
+			},
+			"response": []
+		}
+	]
+}

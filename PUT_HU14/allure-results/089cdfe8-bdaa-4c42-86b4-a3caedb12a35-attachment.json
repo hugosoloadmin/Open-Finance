@@ -1,0 +1,16 @@
+{
+    "Accept": "application/json",
+    "Authorization": "Bearer eyJlbmMiOiJBMTI4Q0JDLUhTMjU2IiwiYWxnIjoiQTEyOEtXIiwiY3R5IjoiSldUIn0.EJ5hcrXyVsq2k28waXP7kQHgIC2pEBH7uQmMk2FDWmlG_rh4PmeuPQ.cEiHAYN9u0xqncvMky4iQg.yYNxv67zV8_TtEZuJmnZCWS6nU0tJLUMzwFmLr8WdFlbkGVGmlEqPKPtT7LIDbgYylJg4tkGwFZ4NQ2sP4EOje6iqbiWV4Ih8cY0HKpjhfb0lqXgEvvFfuCkrfhYj9zgll3Wot-4f3gkOERglJj7V6UldGi8PoMsIqK0Qq7YJDmCFf-jIqJxupeFdbYvvCMw3X40Y43A-zbz3abxfMvwKHsGdV1NIv2ICp1t9g-2b3h-UcaefM78shtjkUZBeULz71JVln2PVyZ8p8ZzZoZs5QrAw4OSZKVb-weKBYkmR1cSw8FR_Rlsk4EcUnV-V9UotiE9KJMA70TSqozFfiFkKbkTYAy2FUuS5Tg1DlQClxqTCDkMe6DJhoqBUMIZ5SmpglX1ZC-avg6YnYog3F142Yp4cUy03IZIYW0mlDuZntG60wusAy-4b2alryntkBZ4XygQ0kHCFScZ69NLAo7hgKsCZ4lHPSw6wBQkSO5IHkaGSv-DYpMTy52v8Qu1DwyLDl_D7ghTSdBlIE3cWlEmfD_03inI4g-8ULhGm12oYm2X1va0CAvNWBZCFQOKxLD_B7JFYQs4_wUqmBBrY2QSAx5TiDMTzUIwt-SfpXz-omldJKcRQtV-YM3axGuJZV8iYkdvelm7gyEE_dcdyxhrMNLE-bG5RpgBadr2tRb0OwyRvuwc123ouvDAYfTNIPj9V7zQbqSMFjxE_awqcApfoZdA_Cir3e1thu2sbnQNZ_FO1QuOLXNIE6CcgGwHRXAxA_wcjui9JCDpWQ3z0bseTADpLg7_BGFOIWgzPwEdbp_9JwJd_f-UZWFHxKsGkacnCs444JdfnCuqFw2QMT1zAVDr0urql4on-YcmHidsExMwUFlHxvsKN8uy6hCRiw0FJTNKvgxuXmEcJ5Y4c9uN3Hug5StheG5ltllorlf_LYYn5SdNYMyeCsDGUnfPVQZ50RNjYDqD0RWlcy1bWWLzl2lzOpXxqfH7AF-uop5NUHxiXc0oZK7rrGoScV5fu7TfL65FLiHwaGk8xtn3-wodh16RmXE-kjH1j3E2KpZ0hbQbAqFZJgJSXgj3Cx3Kqk7cRc0nVOSKw2Q7V8c4ALiruap5E5WRSURigEGvP6A5oTNow6xh1fDMEZdfKZzMzLGmkpEbtZXnKzCdLLMdXHfjYM_0QbrUNN57oNYiTKQn7FBfqPir1ea88YTzmfMML3-XtQmvi97t7SAxMQhsyVY-WGWFw7_52S4RTRm__XMrZBXPHOM6eggWesd5fuBlxpSQu0qk_2x1ggikH9DeFZIOhg.eSHYgJ1__KQaNm7k8nurfQ",
+    "x-fapi-interaction-id": "1481a5b8-3427-43c3-a10d-1c154d1b42c9",
+    "x-fapi-auth-date": "2024-08-08T13:41:35",
+    "x-fapi-customer-ip": "177.172.37.32",
+    "x-api-key": "722183cfd9be050b9564ecbc9c0aaf40",
+    "Content-Type": "application/json",
+    "User-Agent": "PostmanRuntime/7.39.1",
+    "Cache-Control": "no-cache",
+    "Postman-Token": "be17140d-c4d0-4f3a-8fbd-751aeb5ff8a3",
+    "Host": "rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive",
+    "Content-Length": "1065"
+}

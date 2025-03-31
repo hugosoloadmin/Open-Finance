@@ -1,0 +1,17 @@
+// Obtener la respuesta como JSON
+let response = pm.response.json();
+
+// Extraer la URL de la respuesta
+let agregationUrl = response.data.agregationUrl;
+
+// Usar una expresión regular para capturar el código después de "consent?id="
+let match = agregationUrl.match(/consent\?id=([^&]+)/);
+
+if (match) {
+    // Guardar el valor capturado en una variable de entorno
+    let consentId = match[1];
+    pm.environment.set("consentId", consentId);
+    console.log("Consent ID:", consentId);
+} else {
+    console.log("No se encontró el Consent ID en la URL.");
+}

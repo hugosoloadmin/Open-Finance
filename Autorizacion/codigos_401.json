@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "2ea104ae-03d1-4790-a0fb-2e24de7cf689",
+		"name": "Errores 401",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29460625",
+		"_collection_link": "https://red-satellite-829132.postman.co/workspace/Finance-automatizacion~0b159870-f441-4137-ade7-cda25e7bab86/collection/29460625-2ea104ae-03d1-4790-a0fb-2e24de7cf689?action=share&source=collection_link&creator=29460625"
+	},
+	"item": [
+		{
+			"name": "Token Codigos 401",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 401\", function () {\r",
+							"    pm.response.to.have.status(401);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"tlsDisabledProtocols": [
+					"TLSv1_3"
+				]
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Cookie",
+						"value": "8c3c29440ccad7f932d0fc6703d6c5ab=8c040b0ecdbb695e815e9a648f8ad69c"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "client_id",
+							"value": "{{client_id}}",
+							"type": "text"
+						},
+						{
+							"key": "client_assertion_type",
+							"value": "{{client_assertion_type}}",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "banks.read",
+							"type": "text"
+						},
+						{
+							"key": "client_assertion",
+							"value": "eyJraWQiOiI2NjRkY2U5Zi0zODI4LTQ3NmEtYTUyOC1lMTRkNGRjNWZhN2UiLCJhbGciOiJQUzI1NiJ9.eyJpYXQiOjE3Mjk3ODA4NzksImlzcyI6Im1vbmlKV1QiLCJzdWIiOiJtb25pSldUIiwiYXVkIjoiaHR0cHM6Ly9pbmljaWFjaW9ucGFnb3NvcGZ0ZXN0LmFjaGNvbG9tYmlhLmNvbS5jbzo4NDQ2L3JlYWxtcy9hZ3JlZ2FjaW9uL3Byb3RvY29sL29wZW5pZC1jb25uZWN0L3Rva2VuIiwiZXhwIjo0MTAyNDQ0Nzk5LCJqdGkiOiIyOGM5NWUxZS1kZGE1LTQ4NDctYWI1Ni0zMzlhYjc1MjhmNjQifQ.U5BMtZAxYQf2tOtPY80LGLI4QtWUx-jYml0zt0SQs4x15C6rvkpdcy8lWMlseQ8AzCx46CQOaVSVUKizQqN8FViz1-SO2_fBZE1Dd4zZvstMUTlGQcgPXVALWqOoOwdvLWMGHdPzC3wmiDffBCj7i2Y-CePzItzNCcEzk9HrTXkA1yINH3Jexaj81u0JRyt3DCmd86Eknp-clAUr4-UUUxiUlzw-t0lMUUCIxwXATdBk97plTWBhD0XlspvIGPNOs_93Uy7zKV93Lft6i_GJ43D49ExDH-XhltzPlSt1JqEt-P0hqXSGrEK7DguA9Tvyq6VAFAvIgiloc0UVaG4kaA",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{Base-url}}",
+					"host": [
+						"{{Base-url}}"
+					]
+				},
+				"description": "Generated from cURL: curl --location '\nhttps://agregacion.itac.co:8447/realms/agregacion/protocol/openid-connect/token'\n\\\n--header 'Content-Type: application/x-www-form-urlencoded' \\\n--header 'Cookie: 8c3c29440ccad7f932d0fc6703d6c5ab=8c040b0ecdbb695e815e9a648f8ad69c' \\\n--data-urlencode 'client_id=moniJWT' \\\n--data-urlencode 'client_assertion_type=urn:ietf:params:oauth:client-assertion-type:jwt-bearer' \\\n--data-urlencode 'grant_type=client_credentials' \\\n--data-urlencode 'scope=banks.read' \\\n--data-urlencode 'client_assertion=eyJraWQiOiI2NjRkY2U5Zi0zODI4LTQ3NmEtYTUyOC1lMTRkNGRjNWZhN2UiLCJhbGciOiJQUzI1NiJ9.eyJpYXQiOjE3Mjk4OTU4MjIsImlzcyI6Im1vbmlKV1QiLCJzdWIiOiJtb25pSldUIiwiYXVkIjoiaHR0cHM6Ly9hZ3JlZ2FjaW9uLml0YWMuY286ODQ0Ny9yZWFsbXMvYWdyZWdhY2lvbi9wcm90b2NvbC9vcGVuaWQtY29ubmVjdC90b2tlbiIsImV4cCI6NDEwMjQ0NDc5OSwianRpIjoiZGUwNmVmNmItZjlhZS00NGE2LWE1Y2UtNzIyOWJkZDMxNzdhIn0.Vdr6GBw3WWD5pSTIm9COHC7wZP6Zt54OlJKzpTXkmyNTXXtaeCFnqPz81eWNxIxgoRzyiLt0QaQ2qdi_prAEWUfYBMMR_rI8VlB9dzuM5EQLbXJq28K4VOMSET2PpEm14GA46iH1LD9phP0DlduZNweI0c7fWyWcMGb1q5xkkPxj4Cvx2i0gcKi-Vc8xjLiDO8Ic6AyWwx0-LmPu76yCUM7xz49ro7qSU4qFPSdeWtr-j8n_Vk9uyNkdDUOE-Th60c_OdJLjgDGCTPWgg9opXrbHvAexGq5xdBpW-TPm4IHbVd5BMJnJIFNpzjNw8Zl3M30lQhbOd5Ydeu9fEIGSFg'"
+			},
+			"response": []
+		}
+	]
+}

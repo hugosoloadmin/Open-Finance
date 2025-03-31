@@ -1,0 +1,204 @@
+{
+	"info": {
+		"_postman_id": "ea15ef4c-1105-491e-9a80-e60f907290a9",
+		"name": "Header banks codigos 400",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29460625",
+		"_collection_link": "https://red-satellite-829132.postman.co/workspace/Finance-automatizacion~0b159870-f441-4137-ade7-cda25e7bab86/collection/29460625-ea15ef4c-1105-491e-9a80-e60f907290a9?action=share&source=collection_link&creator=29460625"
+	},
+	"item": [
+		{
+			"name": "GET /banks codigo 400",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Imprimir el comentario en la consola de Newman\r",
+							"console.log(\"Comentario del caso de prueba: \", pm.iterationData.get(\"comentario\"));\r",
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"// Crear una nueva fecha\r",
+							"var fecha = new Date();\r",
+							"\r",
+							"// Formatear la fecha en el formato deseado (YYYY-MM-DDTHH:MM:SS)\r",
+							"var fechaFormateada = fecha.toISOString().slice(0, 19);\r",
+							"\r",
+							"// Guardar la fecha en una variable de entorno o local\r",
+							"pm.environment.set(\"$isoTimestamp\", fechaFormateada);"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Authorization}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}"
+					},
+					{
+						"key": "x-fapi-interaction-id",
+						"value": "{{x-fapi-interaction-id}}"
+					},
+					{
+						"key": "x-fapi-auth-date",
+						"value": "{{x-fapi-auth-date}}"
+					},
+					{
+						"key": "x-fapi-customer-ip",
+						"value": "{{x-fapi-customer-ip-address}}"
+					}
+				],
+				"url": {
+					"raw": "{{Url}}/banks",
+					"host": [
+						"{{Url}}"
+					],
+					"path": [
+						"banks"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET /banks",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{agregatorToken}}"
+							},
+							{
+								"key": "x-api-key",
+								"value": "1c9287f179ce7ff3a817e9a1a88ce816"
+							},
+							{
+								"key": "x-fapi-interaction-id",
+								"value": "{{$randomUUID}}"
+							},
+							{
+								"key": "x-fapi-auth-date",
+								"value": "{{$isoTimestamp}}"
+							},
+							{
+								"key": "x-fapi-customer-ip",
+								"value": "{{$randomIP}}"
+							},
+							{
+								"key": "apim-debug",
+								"value": "true"
+							},
+							{
+								"key": "Cookie",
+								"value": "86d42b0ff53e52cb642a2645ea05e52e=afe8386278723538743cea9524bcc06c"
+							}
+						],
+						"url": {
+							"raw": "https://apic-mtls-gw-gateway-cp4i-apic.apps.devach.achopenshift.itac.com.co/pub/agregation/agregation/v1/banks",
+							"protocol": "https",
+							"host": [
+								"apic-mtls-gw-gateway-cp4i-apic",
+								"apps",
+								"devach",
+								"achopenshift",
+								"itac",
+								"com",
+								"co"
+							],
+							"path": [
+								"pub",
+								"agregation",
+								"agregation",
+								"v1",
+								"banks"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "x-original-http-status-code",
+							"value": "200"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json;charset=utf-8"
+						},
+						{
+							"key": "server",
+							"value": "IBM App Connect Enterprise"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 04 Sep 2024 20:59:28 GMT"
+						},
+						{
+							"key": "set-cookie",
+							"value": "930bbdcb422702e9535563b159838474=95a62e7bdcda933af3a6ca956f8d1506; path=/; HttpOnly"
+						},
+						{
+							"key": "X-Global-Transaction-ID",
+							"value": "e84e32dc66d8ca2a0005c2b1"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "name=default,100;"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "name=default,98;"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": {\n        \"messageUid\": \"288e0b96-4c2d-4b35-b7c3-d940e391035b\",\n        \"requestDt\": \"2024-09-04T15:59:23.018Z\",\n        \"requestAppId\": null\n    },\n    \"data\": {\n        \"financialInstitutions\": [\n            {\n                \"financialInstitutionId\": \"9111\",\n                \"financialInstitutionName\": \"Banka\"\n            },\n            {\n                \"financialInstitutionId\": \"1008\",\n                \"financialInstitutionName\": \"Davivienda\"\n            },\n            {\n                \"financialInstitutionId\": \"1001\",\n                \"financialInstitutionName\": \"Bancolombia\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		}
+	]
+}

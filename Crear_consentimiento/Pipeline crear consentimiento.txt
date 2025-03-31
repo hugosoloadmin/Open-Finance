@@ -1,0 +1,64 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Descargar cambios') {
+            steps {
+                git branch: 'master', url: 'https://github.com/sergiomolber/OPEN_FINANCE.git'
+            }
+        }
+
+        stage('Limpiar entornos') {
+            parallel {
+                stage('Limpiar Crear consentimiento') {
+                    steps {
+                        dir('Crear consentimiento') {
+                            bat 'rmdir /S /Q allure-results'
+                        }
+                    }
+                }
+              
+            }
+        }
+
+        
+
+                stage('Ejecutar Pruebas Crear consentimiento') {
+                    steps {
+                        dir('Crear consentimiento') {
+                            script {
+                                def newmanPath = "C:\\Users\\sergiomolina\\AppData\\Roaming\\npm\\newman"
+
+                                def runTest = { testScript ->
+                                    try {
+                                        bat testScript
+                                    } catch (Exception e) {
+                                        echo "Error al ejecutar una prueba con Newman: ${e.message}"
+                                    }
+                                }
+
+                            runTest("${newmanPath} run CREAR_TOKEN.json -e environment.json -r allure --insecure --export-environment updated_environment.json")
+							//Ejecutar cada prueba con el token actualizado
+							runTest("${newmanPath} run CREAR_CONSENTIMIENTO.json -e updated_environment.json -d Data_Headers.csv -r allure --insecure")
+							runTest("${newmanPath} run Sin_enviar_campos.json.json -e updated_environment.json -r allure --insecure")
+							
+                            }
+                        }
+                    }
+                }
+
+        
+                stage('Crear reporte Crear consentimiento') {
+                    steps {
+                        dir('Crear consentimiento') {
+                            bat 'allure generate --single-file allure-results --clean -o allure-report'
+                            bat 'ren allure-report\\index.html Crearconsentimiento_report.html'
+                        }
+                    }
+                }
+               
+           
+        
+    }
+
+}

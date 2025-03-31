@@ -1,0 +1,7 @@
+x-fapi-interaction-id,x-api-key,x-fapi-auth-date,x-fapi-customer-ip-address,Authorization,comentario
+,96ccdadf584efe6b6daa2c8467c0527a,{{$isoTimestamp}},{{$isoTimestamp}},{{access_token}},x-fapi-interaction-id  Validar campo al enviarlo vacio
+null,96ccdadf584efe6b6daa2c8467c0527a,{{$isoTimestamp}},{{$isoTimestamp}},{{access_token}},x-fapi-interaction-id  Validar campo al enviarlo null
+96ccdadf584efe6b6daa2c8467c0527a4343423432432,96ccdadf584efe6b6daa2c8467c0527a,{{$isoTimestamp}},{{$isoTimestamp}}{{access_token}},,x-fapi-interaction-id  Validar campo al enviarlo incorrecto
+{{$randomUUID}},96ccdadf584efe6b6daa2c8467c0527a,null,{{$isoTimestamp}},{{access_token}},x-fapi-auth-date Validar campo al enviarlo null
+{{$randomUUID}},96ccdadf584efe6b6daa2c8467c0527a,{{$isoTimestamp}},{{$isoTimestamp}},,Authorization Validar campo al enviarlo vacio
+{{$randomUUID}},96ccdadf584efe6b6daa2c8467c0527a,{{$isoTimestamp32}},{{$isoTimestamp}},{{access_token}},x-fapi-auth-date Validar campo al enviarlo incorrecto

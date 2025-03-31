@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "68aef025-9431-4005-8a39-f3da5c6c413e",
+		"name": "GET 401 HU014",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31315694",
+		"_collection_link": "https://warped-rocket-761289.postman.co/workspace/81e524ff-75cf-4572-9434-5fb1db1b5b7e/collection/31315694-68aef025-9431-4005-8a39-f3da5c6c413e?action=share&source=collection_link&creator=31315694"
+	},
+	"item": [
+		{
+			"name": "GET Redirect Uri Error 401",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 401\", function () {\r",
+							"    pm.response.to.have.status(401);\r",
+							"});\r",
+							"\r",
+							"// Imprimir el comentario en la consola de Newman\r",
+							"console.log(\"Comentario del caso de prueba: \", pm.iterationData.get(\"comentario\"));\r",
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Authorization}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "x-fapi-interaction-id",
+						"value": "{{x-fapi-interaction-id}}"
+					},
+					{
+						"key": "x-fapi-auth-date",
+						"value": "{{x-fapi-auth-date}}"
+					},
+					{
+						"key": "x-fapi-customer-ip",
+						"value": "{{x-fapi-customer-ip-address}}"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}"
+					}
+				],
+				"url": {
+					"raw": "https://rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co/ach/pib/autorizador/v1/redirect-auth-url?financialInstitutionId=9111&codeChallenge=Xmegaq5oIYNP_SddrmnE-NSvrGuDC3AfVnC3CartlbY&codeChallengeMethod=S256&redirectUri=https%3A%2F%2Finiciacionpagosopftest.achcolombia.com.co%3A8444%2Fcallback&consentId=a8ca63e1-5fb4-4d6e-9067-ade5c95d0098&termsDate=2024-07-09T01%3A41%3A55.237Z&termsVersion=v1.1",
+					"protocol": "https",
+					"host": [
+						"rgw-of",
+						"apps",
+						"awsprbcluo",
+						"awsocpprb",
+						"ach",
+						"interno",
+						"com",
+						"co"
+					],
+					"path": [
+						"ach",
+						"pib",
+						"autorizador",
+						"v1",
+						"redirect-auth-url"
+					],
+					"query": [
+						{
+							"key": "financialInstitutionId",
+							"value": "9111"
+						},
+						{
+							"key": "codeChallenge",
+							"value": "Xmegaq5oIYNP_SddrmnE-NSvrGuDC3AfVnC3CartlbY"
+						},
+						{
+							"key": "codeChallengeMethod",
+							"value": "S256"
+						},
+						{
+							"key": "redirectUri",
+							"value": "https%3A%2F%2Finiciacionpagosopftest.achcolombia.com.co%3A8444%2Fcallback"
+						},
+						{
+							"key": "consentId",
+							"value": "a8ca63e1-5fb4-4d6e-9067-ade5c95d0098"
+						},
+						{
+							"key": "termsDate",
+							"value": "2024-07-09T01%3A41%3A55.237Z"
+						},
+						{
+							"key": "termsVersion",
+							"value": "v1.1"
+						}
+					]
+				},
+				"description": "Generated from cURL: curl --location 'https://rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co/ach/pib/autorizador/v1/redirect-auth-url?financialInstitutionId=9111&codeChallenge=Xmegaq5oIYNP_SddrmnE-NSvrGuDC3AfVnC3CartlbY&codeChallengeMethod=S256&redirectUri=https%3A%2F%2Finiciacionpagosopftest.achcolombia.com.co%3A8444%2Fcallback&consentId=a8ca63e1-5fb4-4d6e-9067-ade5c95d0098&termsDate=2024-07-09T01%3A41%3A55.237Z&termsVersion=v1.1' \\\n--header 'Accept: application/json' \\\n--header 'x-fapi-interaction-id: 1481a5b8-3427-43c3-a10d-1c154d1b42c9' \\\n--header 'x-fapi-auth-date: 2024-11-12T12:00:00' \\\n--header 'x-fapi-customer-ip: 177.172.37.32' \\\n--header 'x-api-key: 722183cfd9be050b9564ecbc9c0aaf40'"
+			},
+			"response": []
+		}
+	]
+}

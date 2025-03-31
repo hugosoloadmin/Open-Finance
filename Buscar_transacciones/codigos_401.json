@@ -1,0 +1,209 @@
+{
+	"info": {
+		"_postman_id": "5dd0e3b4-c766-4d52-a20c-b6d9c0e91a81",
+		"name": "Transacciones con consentimientos codigo 401",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29460625",
+		"_collection_link": "https://red-satellite-829132.postman.co/workspace/Finance-automatizacion~0b159870-f441-4137-ade7-cda25e7bab86/collection/29460625-5dd0e3b4-c766-4d52-a20c-b6d9c0e91a81?action=share&source=collection_link&creator=29460625"
+	},
+	"item": [
+		{
+			"name": "Buscar transacciones por consent ID Errores 401",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"// Imprimir el comentario en la consola de Newman\r",
+							"console.log(\"Comentario del caso de prueba: \", pm.iterationData.get(\"comentario\"));\r",
+							"pm.test(\"Status code is 401\", function () {\r",
+							"    pm.response.to.have.status(401);\r",
+							"});"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{Authorization}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}",
+						"type": "text"
+					},
+					{
+						"key": "x-fapi-interaction-id",
+						"value": "{{x-fapi-interaction-id}}",
+						"type": "text"
+					},
+					{
+						"key": "x-fapi-auth-date",
+						"value": "{{x-fapi-auth-date}}",
+						"type": "text"
+					},
+					{
+						"key": "x-fapi-customer-ip",
+						"value": "{{x-fapi-customer-ip-address}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{Url}}/transactions/{{consentId}}",
+					"host": [
+						"{{Url}}"
+					],
+					"path": [
+						"transactions",
+						"{{consentId}}"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "/transactions/{consentId}",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{agregatorToken}}",
+								"type": "text"
+							},
+							{
+								"key": "x-api-key",
+								"value": "1c9287f179ce7ff3a817e9a1a88ce816",
+								"type": "text"
+							},
+							{
+								"key": "x-fapi-interaction-id",
+								"value": "{{$randomUUID}}",
+								"type": "text"
+							},
+							{
+								"key": "x-fapi-auth-date",
+								"value": "{{$isoTimestamp}}",
+								"type": "text"
+							},
+							{
+								"key": "x-fapi-customer-ip-address",
+								"value": "{{$randomIP}}",
+								"type": "text"
+							},
+							{
+								"key": "apim-debug",
+								"value": "true",
+								"type": "text"
+							},
+							{
+								"key": "Cookie",
+								"value": "86d42b0ff53e52cb642a2645ea05e52e=afe8386278723538743cea9524bcc06c",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "https://apic-mtls-gw-gateway-cp4i-apic.apps.devach.achopenshift.itac.com.co/pub/agregation/agregation/v1/transactions/:consentId",
+							"protocol": "https",
+							"host": [
+								"apic-mtls-gw-gateway-cp4i-apic",
+								"apps",
+								"devach",
+								"achopenshift",
+								"itac",
+								"com",
+								"co"
+							],
+							"path": [
+								"pub",
+								"agregation",
+								"agregation",
+								"v1",
+								"transactions",
+								":consentId"
+							],
+							"variable": [
+								{
+									"key": "consentId",
+									"value": "a82a06c8-355d-4201-8dcf-d18873efe394"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Connection",
+							"value": "Keep-Alive"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "x-original-http-status-code",
+							"value": "200"
+						},
+						{
+							"key": "content-type",
+							"value": "application/json;charset=utf-8"
+						},
+						{
+							"key": "server",
+							"value": "IBM App Connect Enterprise"
+						},
+						{
+							"key": "date",
+							"value": "Wed, 04 Sep 2024 20:59:54 GMT"
+						},
+						{
+							"key": "set-cookie",
+							"value": "930bbdcb422702e9535563b159838474=95a62e7bdcda933af3a6ca956f8d1506; path=/; HttpOnly"
+						},
+						{
+							"key": "X-Global-Transaction-ID",
+							"value": "e84e32dc66d8ca4700055903"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "name=default,100;"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "name=default,95;"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"meta\": {\n        \"messageUid\": \"a2a97e3f-afc9-489a-82f1-c62350efb222\",\n        \"requestDt\": \"2024-09-04T15:59:51.257Z\",\n        \"requestAppId\": \"190.149.131.182\"\n    },\n    \"data\": {\n        \"response\": \"eyJlbmMiOiJBMjU2R0NNIiwiYWxnIjoiUlNBLU9BRVAtMjU2Iiwia2lkIjoiZWVkODRmYTEtZjA3ZC00ZGFiLWIzNjEtMjVhNTk2Y2RiOGVlIn0.f9UAbjYB_QIHvWJ5AsSwhBGQiWw6BetLUhQgtG6FQwT7aTzoZqB22JM1CuYYVn1wClImRGIVPuc2NI-gyFqSGyghVAjMPruW6JH6-ifQjoQ2mmjlBezSAekrgapEaiF5wzE-AquTE0Xwc-jAy1guD61H4fsxV0Apsmz8rXlk4EI2ERdvs9ykPaB9jch5H3mgCzttqj0RtBQ41NiGtKLjAnuPgv5-AtUkBXqVe0ZAz7YCiYpiT1-R5G7Vchaph4uE0TicI3OhiY_8RIRThcmxFMKysdIu37HADLcMwEGcm4sFLgJVMp55qWmGNNISRGm5xNPUcKf8WPhspFPtO-jwDA.1rlAoI8DF2BdONKr.UrASYgbhzREqJ1pcmbX4P6ORwJQsplALHSOk7RNaxQAG69NfLQ5ag8MCYJLnF4nIV2GzZ1QWZT_ezuC26sH-6k4JJB4AqZdPDfOp4XMe8jAMHKW40Jj7j-zIZCg8MMFjgWza-Z2rLEl-yo2r1CugX4mf5blBoMj5EKyXm8DD_OcQ5Gg0S-iEGv4BUnMXhDoySsII6J2pFWMfPWFgwwSd1maRei0CeL595SuudLHQBH73Oua1ypXMICiznaMYV13Wb_IL35ifi67RqnTUXWRrdLD4n4WbgMuLyWZShGC0qGrTDiMJRo-JzhrOMYhl8VP6TOCNPrUN2Nwii_0uUzuwcV-2if0KUXI5U4eXXcWu0I0heJFuBISVtAqH2axp0Cn3AUeNS4EKTrhskNFgKCSP4HOSS5-j5Tzp_EnIdMSuqWLmw5W_EKQlrtkPvHYGo53F-vMjP5fJp-8jYb6TppIOnSWOq1wtbdB6gzRCWV1u6HEh_nt2XuYhfXznCJX8OL5C8XrjuWlqEoYfwsyKAjidalD75zi67qfaKkbSkTjUdvffxBaEKvsCQ1AzOL_6iLdXZjZFcIPHAJtjQCILztKkp22wVXMLxoWziiDs5dUOpUcdwh9jPfmGTD3UopSwx-hIp9qOwzF1HizbvCwo6npORRmHsTHi8p9sDozjBwLX_x1WepTW6g91HQchQ7jTyGMPVIXvbOwOrphchq7I9PUhAh9O20IBqpwqwKW5M7yBLt_mv07Pny8VRfOJPWP4ta9e35ps6BJsVK0AZ5t4tftvc4ehsZHeSR5MlQ9qmY9OuSJSXzm47Ruzm6az-K_lgEcAdPVUYuAvMB36gaDh3W4jIPs1xf0ymj1z5smJZ1r1KuOcN4yWqbXgC6MXFZwjR9s90UKpibWzcpa_Bp_tUToShuxIC05InwIe0qHY8h6MnV-x83s9cOyxhUOj2yJWb48JhRsfA4FxotyPkWfEWH7kio-CpJ0jJ5QJLQfurFvoiAWuusdWkWgrxCuVVderXvWPFTTkDJrrhp-kS2rntEvN_F6RzzHI5mbnJNt8v3R0CRBDtS-tCemgmFOLyuXdmmyqd_oGc8MgM6f87w2Bw10btDaUJYBliJbfLdcb6APjvQL7lCZAUUoyXFXXfLfqnUQaY2lVcztWbkw6rullNeVNMbT8d327yWPkxKirCIufSQ9aWcyr7aIS-yACWOkHarrLG8dHQ_q5B-TugpeuC9HvrI0DaJj7pfaueox7tI_KCP2YmxTaIjcRKtxgGSY7u1-zeuRuiTGmD3NbeGYpEIrP0S8gTu0ZdaC2MeoXKsabjdaE0FpuKLBuUKHXUb1FO-P1RjS7g9yilExyF8cwDFIQ8dhYkCRSrotaaeNaueDJnyyTffL-XXNBqWRgNIVzmTh_emLccaLkwrQwKwqJlziCv3QedwJjiEQs1mEyRe8HmGogcjpYQLL3lGXBotxl5BNz5L5xJm-8EpRFAYdpOq22f9SAFzSQQPIyHvleur0WxeJc9DYfuLPuTyzgxrj6HgRhYONLzlAh0I3JxN8g9gBt1DMGTKxN7uatwbqkw8KXwc7S5GCL2MIEcudCHbw7IN0JOOEYgfHbY9v2pT6Trr-SHa1Ed1E6hWriVhvwwDi3-je6VC5zH-X2ZnRddB1pkM3X5Cn6OisB0-SozIYWNMF_umGX5jexIp-3ulUlfL2J1ubfAi_X_c9SlxStcsay86kB8XsWQWo_rBC_aqeXo5MSCztQy97V5xVrYQF2r6S7ZcIYMTTc_8l9kQ0ZKNJ361FIVBmulxOMO0-DWZHKdyyCa7a4h6RCTfSksAT2cXd4zzvZ3pz56pZZWYcg9YmFcEhqkMqDtRguixJvwhRmbBD4A7VHZIS0LHFgzGQnIscf6I1EFZrbxi8xR7ettqZy4YIyVEsjOEdajvIWZanlwQ-wdTvWPoI94ehz-Q3snWRHm5knWiAhyVTJCM7dMmONI6vtSEvGt5mTKRAGaWQQe0SGV93g7ciIsJKcFJUxif5C6AsfQKrQ9Wk9fc9rDe9TjB_4EjK59-cuQInBj7Q4dkMDDz9xPQQNC5CTaYsZbgreOiA9Zo7lvaLQlTf4piAD54Kc-q_cLIB2KRZuhbpAvt5KXIHLnUq1CDy4BWiVtJFZ7a4BehdQjkXLgrVI339B6Pedhvv4ukhDfyY8t2089hHog0h2wSxTulWmDFhhkWYwptWCY5k43NtR70_YMZKftkrOjgEUoi19FEDaEPG31VWHEleIwRPVdKP1FpMmhvxMn-KIbQ7w9d3dKwBPc8oDxA87r04GxpowyI7B9xg_0OVWE4PPRcHe0_B97iWG-SpH4Lg1cbp0HdGi.VAyqLD2Wzmxz85IQR3rzlA\"\n    }\n}"
+				}
+			]
+		}
+	]
+}

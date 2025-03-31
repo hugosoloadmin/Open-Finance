@@ -1,0 +1,1 @@
+{"meta":{"messageUid":"2cc1bd9b-b3ef-4525-beb5-28161d1ce777","requestDate":"2024-11-20T15:34:59","requestAppId":null},"statusCode":500,"statusDesc":"Internal Server Error","errors":{"Items":{"errorCode":"1026","errorDetail":"Se presentan fallas técnicas en este momento. Intente más tarde."}}}

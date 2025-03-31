@@ -1,0 +1,93 @@
+{
+	"info": {
+		"_postman_id": "0a34b413-4250-47ba-81e8-bda8873c894d",
+		"name": "PUT 200",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31315694",
+		"_collection_link": "https://warped-rocket-761289.postman.co/workspace/81e524ff-75cf-4572-9434-5fb1db1b5b7e/collection/31315694-0a34b413-4250-47ba-81e8-bda8873c894d?action=share&source=collection_link&creator=31315694"
+	},
+	"item": [
+		{
+			"name": "PUT 200",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"// Imprimir el comentario en la consola de Newman\r",
+							"console.log(\"Comentario del caso de prueba: \", pm.iterationData.get(\"comentario\"));"
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					},
+					{
+						"key": "x-fapi-interaction-id",
+						"value": "{{x-fapi-interaction-id}}"
+					},
+					{
+						"key": "x-fapi-auth-date",
+						"value": "{{x-fapi-auth-date}}"
+					},
+					{
+						"key": "x-fapi-customer-ip",
+						"value": "{{x-fapi-customer-ip-address}}"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{x-api-key}}"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"codeVerifier\": \"ec7a734718056f18608a85bd808d0c20873f5d03c6d9e37f44f5856b\",\n    \"redirectUri\": \"https://internal-aws-prb-lb-opfback-238477373.us-east-1.elb.amazonaws.com:8444/callback\",\n    \"consentIdFI\": \"83db9626-0bce-411d-b6ad-d0e1bb1bb682\",\n    \"response\": \"eyJraWQiOiI4N2RhMWRhMC0zYjY4LTRiNzUtYjUwNC02NWU5NzM3YmRiYzIiLCJhbGciOiJQUzI1NiJ9.eyJpc3MiOiJodHRwczovL2JhbmthLWF1dGhzZXJ2ZXItb3BlbmZpbmFuY2UuYXBwcy5kZXZhY2guYWNob3BlbnNoaWZ0Lml0YWMuY29tLmNvIiwiYXVkIjoiYWNoLW9wZW4tZmluYW5jZSIsImNvZGUiOiJyOW5RYkhGSmMyaHhDdFBwbkFIa1NxWTJxeTcxQ0dxTkVJWE1UZV96WDBzMTJDSjZEa095U3VpdC1UeGItd0QyTjRYaUNhd0RieVJJaW5tcTlGNWFkWGc2TzR3QXdsZ1NiX2dscllPU0o4UjVYRTd6eFdRWTl4Mmh3RTMxQkxRRiIsImV4cCI6MTcyNTQ4MzU1NywiaWF0IjoxNzI1NDgzNDk3fQ.0_V95YrzOniSlaWXtl3HJm9ky3KI6SP3TfHI9ODdUIDE0ZEHEA4NGuBrecSrwsfFT4mqFGodNfZRSkdAWTnLOzGLyo4pWK7vZEjvSXauJSePTW9LPv8AOmp1JxwKbmdXqZ3GEhVg7PNqzDyjkj29O8fkVLl7KBrx7aPSOi7KIExpHRJE_fbJunDwfsQ_w-3RokT-hy3i6D-8m2__IMxEBvaxc3Iub-FZUA3DA2ycELUweH4P6JT4i9YPqgmPd3bnOscoI7KaIu208tago2EEDHU3KTjsAqvY0ADl7anYsm0MksCbxFL7C2toLk8PabxNvMpJMW1A4bXUMfGlkwCSRg\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co/ach/pib/autorizador/v1/account-access-consents/a8ca63e1-5fb4-4d6e-9067-ade5c95d0098",
+					"protocol": "https",
+					"host": [
+						"rgw-of",
+						"apps",
+						"awsprbcluo",
+						"awsocpprb",
+						"ach",
+						"interno",
+						"com",
+						"co"
+					],
+					"path": [
+						"ach",
+						"pib",
+						"autorizador",
+						"v1",
+						"account-access-consents",
+						"a8ca63e1-5fb4-4d6e-9067-ade5c95d0098"
+					]
+				},
+				"description": "Generated from cURL: curl --location --request PUT 'https://rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co/ach/pib/autorizador/v1/account-access-consents/a8ca63e1-5fb4-4d6e-9067-ade5c95d0098' \\\n--header 'Accept: application/json' \\\n--header 'x-fapi-interaction-id: 1481a5b8-3427-43c3-a10d-1c154d1b42c9' \\\n--header 'x-fapi-auth-date: 2024-11-12T12:00:00' \\\n--header 'x-fapi-customer-ip: 177.172.37.32' \\\n--header 'x-api-key: 722183cfd9be050b9564ecbc9c0aaf40' \\\n--header 'Content-Type: application/json' \\\n--data '{\n    \"codeVerifier\": \"ec7a734718056f18608a85bd808d0c20873f5d03c6d9e37f44f5856b\",\n    \"redirectUri\": \"https://internal-aws-prb-lb-opfback-238477373.us-east-1.elb.amazonaws.com:8444/callback\",\n    \"consentIdFI\": \"83db9626-0bce-411d-b6ad-d0e1bb1bb682\",\n    \"response\": \"eyJraWQiOiI4N2RhMWRhMC0zYjY4LTRiNzUtYjUwNC02NWU5NzM3YmRiYzIiLCJhbGciOiJQUzI1NiJ9.eyJpc3MiOiJodHRwczovL2JhbmthLWF1dGhzZXJ2ZXItb3BlbmZpbmFuY2UuYXBwcy5kZXZhY2guYWNob3BlbnNoaWZ0Lml0YWMuY29tLmNvIiwiYXVkIjoiYWNoLW9wZW4tZmluYW5jZSIsImNvZGUiOiJyOW5RYkhGSmMyaHhDdFBwbkFIa1NxWTJxeTcxQ0dxTkVJWE1UZV96WDBzMTJDSjZEa095U3VpdC1UeGItd0QyTjRYaUNhd0RieVJJaW5tcTlGNWFkWGc2TzR3QXdsZ1NiX2dscllPU0o4UjVYRTd6eFdRWTl4Mmh3RTMxQkxRRiIsImV4cCI6MTcyNTQ4MzU1NywiaWF0IjoxNzI1NDgzNDk3fQ.0_V95YrzOniSlaWXtl3HJm9ky3KI6SP3TfHI9ODdUIDE0ZEHEA4NGuBrecSrwsfFT4mqFGodNfZRSkdAWTnLOzGLyo4pWK7vZEjvSXauJSePTW9LPv8AOmp1JxwKbmdXqZ3GEhVg7PNqzDyjkj29O8fkVLl7KBrx7aPSOi7KIExpHRJE_fbJunDwfsQ_w-3RokT-hy3i6D-8m2__IMxEBvaxc3Iub-FZUA3DA2ycELUweH4P6JT4i9YPqgmPd3bnOscoI7KaIu208tago2EEDHU3KTjsAqvY0ADl7anYsm0MksCbxFL7C2toLk8PabxNvMpJMW1A4bXUMfGlkwCSRg\"\n}'"
+			},
+			"response": []
+		}
+	]
+}

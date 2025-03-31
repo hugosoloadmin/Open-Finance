@@ -1,0 +1,6 @@
+x-fapi-interaction-id,x-api-key,x-fapi-auth-date,x-fapi-customer-ip-address,Authorization,comentario
+{{$randomUUID}},,2024-11-12T12:00:00,2024-11-12T12:00:00,{{access_token}},x-api-key Validar campo al enviarlo vacio
+{{$randomUUID}},null,2024-11-12T12:00:00,2024-11-12T12:00:00,{{access_token}},x-api-key Validar campo al enviarlo null
+{{$randomUUID}},722183cfd9be050b9564ecbc9c0aaf4032,2024-11-12T12:00:00,2024-11-12T12:00:00,{{access_token}},x-api-key Validar campo al enviarlo incorrecto
+{{$randomUUID}},722183cfd9be050b9564ecbc9c0aaf40,2024-11-12T12:00:00,2024-11-12T12:00:00,null,Authorization Validar campo al enviarlo null
+{{$randomUUID}},722183cfd9be050b9564ecbc9c0aaf40,2024-11-12T12:00:00,2024-11-12T12:00:00,{{access_token1}},Authorization Validar campo al enviarlo incorrecto

@@ -1,0 +1,26 @@
+{
+    "financialInstitutionId": "9111",
+    "thirdPartyId": "0a913362-9201-1c58-8192-29dd17a808d2",
+    "owner": {
+        "identificationType": "CC",
+        "identificationNumber": "1023456789"
+    },
+    "expirationDateTime": "2024-07-09T01:41:55",
+    "transactionFromDateTime": "2024-07-09T01:41:55",
+    "transactionToDateTime": "2024-07-09T01:41:55",
+    "termsAcceptanceDateTime": "2024-07-09T01:41:55",
+    "privacyPolicyDateTime": "2024-07-09T01:41:55",
+    "url": "http://www.moni.com/result?consent_id=",
+    "name": "test ACE",
+    "thirdPartyTermsAcceptanceDateTime": "2024-07-09T01:41:55",
+    "thirdPartyTermsAcceptanceVersion": "v1",
+    "thirdPartyTreatmentPersonalDataVersion": "v1.1",
+    "thirdPartyTreatmentPersonalDataDatetime": "2024-07-09T01:41:55",
+    "permissions": [
+        "ReadAccountsBasic",
+        "ReadAccountsDetail",
+        "ReadBalances",
+        "ReadTransactionsBasic",
+        "ReadTransactionsDetail"
+    ]
+}

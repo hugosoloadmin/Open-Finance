@@ -1,0 +1,21 @@
+{
+	"id": "331dd2d4-8ab5-4469-acf8-f72eb50e119d",
+	"name": "New Environment",
+	"values": [
+		{
+			"key": "access_token",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "$isoTimestamp",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2024-11-16T15:38:13.484Z",
+	"_postman_exported_using": "Postman/11.19.0"
+}

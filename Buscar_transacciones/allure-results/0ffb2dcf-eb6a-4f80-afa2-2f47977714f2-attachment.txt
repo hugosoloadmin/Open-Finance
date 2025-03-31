@@ -1,0 +1,1 @@
+{"meta":{"messageUid":"f793c0b7-92fd-4345-b7ea-16e276c3994f","requestDate":"2024-11-20T15:34:24","requestAppId":null},"statusCode":500,"statusDesc":"Internal Server Error","errors":{"Items":{"errorCode":"1026","errorDetail":"Se presentan fallas técnicas en este momento. Intente más tarde. Error al consultar metada en banco"}}}

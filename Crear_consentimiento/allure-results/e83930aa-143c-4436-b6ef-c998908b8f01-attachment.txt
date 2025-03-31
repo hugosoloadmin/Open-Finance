@@ -1,0 +1,1 @@
+{"meta":{"messageUid":"21993c7a-0c69-4cbd-83a0-f5948ea2ede8","requestDate":"2024-11-20T15:54:04","requestAppId":null},"data":{"thirdPartyId":"0a913362-9201-1c58-8192-29dd17a808d2","agregationUrl":"https://iniciacionpagosopftest.achcolombia.com.co:8444/consent?id=97be69c8-21bd-423b-8830-6688d4ce7146"}}
