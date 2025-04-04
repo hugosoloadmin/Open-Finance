@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "5dd0e3b4-c766-4d52-a20c-b6d9c0e91a81",
+		"_postman_id": "0d936637-f4c5-4a1f-bba7-0ab1e838d414",
 		"name": "Transacciones con consentimientos codigo 401",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "29460625",
-		"_collection_link": "https://red-satellite-829132.postman.co/workspace/Finance-automatizacion~0b159870-f441-4137-ade7-cda25e7bab86/collection/29460625-5dd0e3b4-c766-4d52-a20c-b6d9c0e91a81?action=share&source=collection_link&creator=29460625"
+		"_exporter_id": "34505292",
+		"_collection_link": "https://pruebas-1655.postman.co/workspace/Open-Finance-Automatizaci%25C3%25B3n~293f54ff-9360-42e6-8d03-de8e7f26e20f/collection/34505292-0d936637-f4c5-4a1f-bba7-0ab1e838d414?action=share&source=collection_link&creator=34505292"
 	},
 	"item": [
 		{
@@ -31,7 +31,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "{{Authorization}}",
+							"value": "{{access_token}}",
 							"type": "string"
 						}
 					]
@@ -66,7 +66,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"financialInstitutionId\": \"9111\",\r\n    \"thirdPartyId\": \"0a913362-9201-1c58-8192-29dd17a808d2\",\r\n    \"owner\": {\r\n        \"identificationType\": \"CC\",\r\n        \"identificationNumber\": \"1023456789\"\r\n    },\r\n    \"expirationDateTime\": \"2024-07-09T01:41:55\",\r\n    \"transactionFromDateTime\": \"2024-07-09T01:41:55\",\r\n    \"transactionToDateTime\": \"2024-07-09T01:41:55\",\r\n    \"termsAcceptanceDateTime\": \"2024-07-09T01:41:55\",\r\n    \"privacyPolicyDateTime\": \"2024-07-09T01:41:55\",\r\n    \"url\": \"http://www.moni.com/result?consent_id=\",\r\n    \"name\": \"test ACE\",\r\n    \"thirdPartyTermsAcceptanceDateTime\": \"2024-07-09T01:41:55\",\r\n    \"thirdPartyTermsAcceptanceVersion\": \"v1\",\r\n    \"thirdPartyTreatmentPersonalDataVersion\": \"v1.1\",\r\n    \"thirdPartyTreatmentPersonalDataDatetime\": \"2024-07-09T01:41:55\",\r\n    \"permissions\": [\r\n        \"ReadAccountsBasic\",\r\n        \"ReadAccountsDetail\",\r\n        \"ReadBalances\",\r\n        \"ReadTransactionsBasic\",\r\n        \"ReadTransactionsDetail\"\r\n    ]\r\n}",
+					"raw": "{\r\n    \"financialInstitutionId\": \"374651\",\r\n    \"thirdPartyId\": \"e46cb409-5ebc-4dcc-b008-09966aa271d6\",\r\n    \"owner\": {\r\n        \"identificationType\": \"NT\",\r\n        \"identificationNumber\": \"90345827\"\r\n    },\r\n    \"expirationDateTime\": \"2024-07-09T01:41:55\",\r\n    \"transactionFromDateTime\": \"2024-07-09T01:41:55\",\r\n    \"transactionToDateTime\": \"2024-07-09T01:41:55\",\r\n    \"termsAcceptanceDateTime\": \"2024-07-09T01:41:55\",\r\n    \"privacyPolicyDateTime\": \"2024-07-09T01:41:55\",\r\n    \"url\": \"http://www.moni.com/result?consent_id=\",\r\n    \"name\": \"test ACE\",\r\n    \"thirdPartyTermsAcceptanceDateTime\": \"2024-07-09T01:41:55\",\r\n    \"thirdPartyTermsAcceptanceVersion\": \"v1\",\r\n    \"thirdPartyTreatmentPersonalDataVersion\": \"v1.1\",\r\n    \"thirdPartyTreatmentPersonalDataDatetime\": \"2024-07-09T01:41:55\",\r\n    \"permissions\": [\r\n        \"ReadAccountsBasic\",\r\n        \"ReadAccountsDetail\",\r\n        \"ReadBalances\",\r\n        \"ReadTransactionsBasic\",\r\n        \"ReadTransactionsDetail\"\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"

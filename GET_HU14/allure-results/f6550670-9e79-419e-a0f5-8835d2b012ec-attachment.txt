@@ -1,0 +1,1 @@
+{"meta":{"messageUid":"1481a5b8-3427-43c3-a10d-1c154d1b42c9","requestDate":"2025-04-04T11:13:33.285Z","requestAppId":null},"statusCode":500,"statusDesc":"Internal Server Error","errors":[{"errorCode":"1025","errorDetail":"Error al identificar el cliente. Cliente no esta activo"}]}

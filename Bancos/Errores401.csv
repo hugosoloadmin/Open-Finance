@@ -4,3 +4,4 @@ x-fapi-interaction-id,x-api-key,x-fapi-auth-date,x-fapi-customer-ip-address,Auth
 {{$randomUUID}},96ccdadf584efe6b6daa2c8467c0527a32,{{$isoTimestamp}},{{$isoTimestamp}},{{access_token}},x-api-key Validar campo al enviarlo incorrecto
 {{$randomUUID}},96ccdadf584efe6b6daa2c8467c0527a,{{$isoTimestamp}},{{$isoTimestamp}},null,Authorization Validar campo al enviarlo null
 {{$randomUUID}},96ccdadf584efe6b6daa2c8467c0527a,{{$isoTimestamp}},{{$isoTimestamp}},{{access_token1}},Authorization Validar campo al enviarlo incorrecto
+{{$randomUUID}},96ccdadf584efe6b6daa2c8467c0527a,{{$isoTimestamp}},{{$isoTimestamp}},,Authorization Validar campo al enviarlo vacio	
