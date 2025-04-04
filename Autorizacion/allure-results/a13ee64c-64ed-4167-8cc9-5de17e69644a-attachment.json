@@ -1,0 +1,11 @@
+{
+    "Content-Type": "application/x-www-form-urlencoded",
+    "Cookie": "8c3c29440ccad7f932d0fc6703d6c5ab=8c040b0ecdbb695e815e9a648f8ad69c",
+    "User-Agent": "PostmanRuntime/7.39.1",
+    "Accept": "*/*",
+    "Cache-Control": "no-cache",
+    "Postman-Token": "760dbf3a-f3cb-4fe1-bfd3-2fd6f06f30e2",
+    "Host": "{{base-url}}",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive"
+}

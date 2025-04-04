@@ -1,0 +1,14 @@
+{
+    "Accept": "application/json",
+    "x-api-key": "96ccdadf584efe6b6daa2c8467c0527a",
+    "x-fapi-interaction-id": "3e4982f1-b1c1-47eb-a48e-c7d2cf4adbf0",
+    "x-fapi-auth-date": "",
+    "x-fapi-customer-ip": "2025-04-02T15:46:38",
+    "Authorization": "Bearer {{access_token}}",
+    "User-Agent": "PostmanRuntime/7.39.1",
+    "Cache-Control": "no-cache",
+    "Postman-Token": "d1e41523-1dd3-4ea9-bf47-44307145f460",
+    "Host": "{{url}}",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive"
+}
