@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "16c6f495-fc4f-4cc0-9b4e-cc900156d462",
+		"_postman_id": "e2f74498-2bd4-4f73-b528-adfadd36d093",
 		"name": "Sin enviar campos en crear token",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "29460625",
-		"_collection_link": "https://red-satellite-829132.postman.co/workspace/Finance-automatizacion~0b159870-f441-4137-ade7-cda25e7bab86/collection/29460625-16c6f495-fc4f-4cc0-9b4e-cc900156d462?action=share&source=collection_link&creator=29460625"
+		"_exporter_id": "34505292",
+		"_collection_link": "https://pruebas-1655.postman.co/workspace/Open-Finance-Automatizaci%25C3%25B3n~293f54ff-9360-42e6-8d03-de8e7f26e20f/collection/34505292-e2f74498-2bd4-4f73-b528-adfadd36d093?action=share&source=collection_link&creator=34505292"
 	},
 	"item": [
 		{
@@ -255,8 +255,8 @@
 					"script": {
 						"exec": [
 							"let jsonData = pm.response.json();\r",
-							"pm.test(\"Status code is 200\", function () {\r",
-							"    pm.response.to.have.status(200);\r",
+							"pm.test(\"Status code is 400\", function () {\r",
+							"    pm.response.to.have.status(400);\r",
 							"});"
 						],
 						"type": "text/javascript",
