@@ -1,0 +1,12 @@
+{
+    "Content-Type": "application/json",
+    "X-Global-Transaction-ID": "27d9f3ea673e39bb00024500",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+    "WWW-Authenticate": "Bearer error='invalid_token'",
+    "Date": "Wed, 20 Nov 2024 19:34:19 GMT",
+    "X-RateLimit-Limit": "name=Default rate-limit,1;",
+    "X-RateLimit-Remaining": "name=Default rate-limit,0;",
+    "X-BurstLimit-Limit": "name=Default burst-limit,10;",
+    "X-BurstLimit-Remaining": "name=Default burst-limit,8;",
+    "Connection": "close"
+}

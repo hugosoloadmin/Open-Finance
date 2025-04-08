@@ -1,0 +1,1 @@
+{"meta":{"messageUid":"d510161b-f05d-4437-9ca1-8a8762d3c39c","requestDate":"2024-11-20T14:44:07","requestAppId":null},"statusCode":"400","statusDesc":"BadRequestError","errors":[{"code":"400","detail":"El campo x-fapi-auth-date debe tener un formato ISO 8601 válido (yyyy-MM-ddTHH:mm:ss)"}]}
