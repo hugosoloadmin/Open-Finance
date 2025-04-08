@@ -1,0 +1,14 @@
+{
+    "Accept": "application/json",
+    "x-fapi-interaction-id": "54f31764-1f34-4dc5-b058-ab0da7bd95f9",
+    "x-fapi-auth-date": "2024-11-12T12:00:00",
+    "x-fapi-customer-ip": "2024-11-12T12:00:002024-11-12T12:00:002024-11-12T12:00:002024-11-12T12:00:002024-11-12T12:00:002024-11-12T12:00:002024-11-12T12:00:002024-11-12T12:00:002024-11-12T12:00:002024-11-12T12:00:002024-11-12T12:00:002024-11-12T12:00:002024-11-12T12:00:002024-11-12T12:00:002024-11-12T12:00:002024-11-12T12:00:00",
+    "x-api-key": "722183cfd9be050b9564ecbc9c0aaf40",
+    "Authorization": "Bearer {{access_token}}",
+    "User-Agent": "PostmanRuntime/7.39.1",
+    "Cache-Control": "no-cache",
+    "Postman-Token": "f0c04d1b-5ef2-423e-9e36-d16ea84ca0e7",
+    "Host": "rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive"
+}

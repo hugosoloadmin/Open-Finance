@@ -1,0 +1,14 @@
+{
+    "Accept": "application/json",
+    "x-fapi-interaction-id": "6f001373-0d36-428f-b94a-f203ceecb75d",
+    "x-fapi-auth-date": "2024-11-12T12:00:00",
+    "x-fapi-customer-ip": "null",
+    "x-api-key": "722183cfd9be050b9564ecbc9c0aaf40",
+    "Authorization": "Bearer {{access_token}}",
+    "User-Agent": "PostmanRuntime/7.39.1",
+    "Cache-Control": "no-cache",
+    "Postman-Token": "8b227509-1b20-4e3f-9d9e-4a08f4d96439",
+    "Host": "rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive"
+}

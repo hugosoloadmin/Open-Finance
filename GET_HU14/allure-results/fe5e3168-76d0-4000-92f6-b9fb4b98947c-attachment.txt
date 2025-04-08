@@ -1,0 +1,1 @@
+{"meta":{"messageUid":"1481a5b8-3427-43c3-a10d-1c154d1b42c9","requestDate":"2025-04-08T14:59:00.219Z","requestAppId":null},"statusCode":"400","statusDesc":"Error interno","errors":[{"code":"400","detail":"El campo termsDate debe tener un formato ISO 8601 válido (yyyy-MM-ddTHH:mm:ss)"}]}
