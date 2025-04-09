@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "c6cf4e86-0652-4535-b435-09dbe1cda270",
+		"_postman_id": "63a359d5-8ba3-4781-94dd-48f23c1d1d05",
 		"name": "Sin Enviar Campos Header",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "31315694",
-		"_collection_link": "https://warped-rocket-761289.postman.co/workspace/81e524ff-75cf-4572-9434-5fb1db1b5b7e/collection/31315694-c6cf4e86-0652-4535-b435-09dbe1cda270?action=share&source=collection_link&creator=31315694"
+		"_exporter_id": "34505292",
+		"_collection_link": "https://pruebas-1655.postman.co/workspace/Open-Finance-Automatizaci%25C3%25B3n~293f54ff-9360-42e6-8d03-de8e7f26e20f/collection/34505292-63a359d5-8ba3-4781-94dd-48f23c1d1d05?action=share&source=collection_link&creator=34505292"
 	},
 	"item": [
 		{
@@ -49,7 +49,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co/ach/pib/autorizador/v1/redirect-auth-url?financialInstitutionId=9111&codeChallenge=Xmegaq5oIYNP_SddrmnE-NSvrGuDC3AfVnC3CartlbY&codeChallengeMethod=S256&redirectUri=https%3A%2F%2Finiciacionpagosopftest.achcolombia.com.co%3A8444%2Fcallback&consentId=a8ca63e1-5fb4-4d6e-9067-ade5c95d0098&termsDate=2024-07-09T01%3A41%3A55.237Z&termsVersion=v1.1",
+					"raw": "https://rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co/ach/pib/autorizador/v1/redirect-auth-url?financialInstitutionId=374651&codeChallenge=Xmegaq5oIYNP_SddrmnE-NSvrGuDC3AfVnC3CartlbY&codeChallengeMethod=S256&redirectUri=https%3A%2F%2Finiciacionpagosopftest.achcolombia.com.co%3A8444%2Fcallback&consentId=a8ca63e1-5fb4-4d6e-9067-ade5c95d0098&termsDate=2024-07-09T01:51:55&termsVersion=v1.1",
 					"protocol": "https",
 					"host": [
 						"rgw-of",
@@ -71,7 +71,7 @@
 					"query": [
 						{
 							"key": "financialInstitutionId",
-							"value": "9111"
+							"value": "374651"
 						},
 						{
 							"key": "codeChallenge",
@@ -91,7 +91,7 @@
 						},
 						{
 							"key": "termsDate",
-							"value": "2024-07-09T01%3A41%3A55.237Z"
+							"value": "2024-07-09T01:51:55"
 						},
 						{
 							"key": "termsVersion",
@@ -145,7 +145,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co/ach/pib/autorizador/v1/redirect-auth-url?financialInstitutionId=9111&codeChallenge=Xmegaq5oIYNP_SddrmnE-NSvrGuDC3AfVnC3CartlbY&codeChallengeMethod=S256&redirectUri=https%3A%2F%2Finiciacionpagosopftest.achcolombia.com.co%3A8444%2Fcallback&consentId=a8ca63e1-5fb4-4d6e-9067-ade5c95d0098&termsDate=2024-07-09T01%3A41%3A55.237Z&termsVersion=v1.1",
+					"raw": "https://rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co/ach/pib/autorizador/v1/redirect-auth-url?financialInstitutionId=374651&codeChallenge=Xmegaq5oIYNP_SddrmnE-NSvrGuDC3AfVnC3CartlbY&codeChallengeMethod=S256&redirectUri=https%3A%2F%2Finiciacionpagosopftest.achcolombia.com.co%3A8444%2Fcallback&consentId=a8ca63e1-5fb4-4d6e-9067-ade5c95d0098&termsDate=2024-07-09T01:41:55&termsVersion=v1.1",
 					"protocol": "https",
 					"host": [
 						"rgw-of",
@@ -167,7 +167,7 @@
 					"query": [
 						{
 							"key": "financialInstitutionId",
-							"value": "9111"
+							"value": "374651"
 						},
 						{
 							"key": "codeChallenge",
@@ -187,7 +187,7 @@
 						},
 						{
 							"key": "termsDate",
-							"value": "2024-07-09T01%3A41%3A55.237Z"
+							"value": "2024-07-09T01:41:55"
 						},
 						{
 							"key": "termsVersion",
@@ -215,6 +215,9 @@
 					}
 				}
 			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
 				"header": [
@@ -240,8 +243,17 @@
 						"value": "722183cfd9be050b9564ecbc9c0aaf40"
 					}
 				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "https://rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co/ach/pib/autorizador/v1/redirect-auth-url?financialInstitutionId=9111&codeChallenge=Xmegaq5oIYNP_SddrmnE-NSvrGuDC3AfVnC3CartlbY&codeChallengeMethod=S256&redirectUri=https%3A%2F%2Finiciacionpagosopftest.achcolombia.com.co%3A8444%2Fcallback&consentId=a8ca63e1-5fb4-4d6e-9067-ade5c95d0098&termsDate=2024-07-09T01%3A41%3A55.237Z&termsVersion=v1.1",
+					"raw": "https://rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co/ach/pib/autorizador/v1/redirect-auth-url?financialInstitutionId=374651&codeChallenge=Xmegaq5oIYNP_SddrmnE-NSvrGuDC3AfVnC3CartlbY&codeChallengeMethod=S256&redirectUri=https%3A%2F%2Finiciacionpagosopftest.achcolombia.com.co%3A8444%2Fcallback&consentId=a8ca63e1-5fb4-4d6e-9067-ade5c95d0098&termsDate=2024-07-09T01:34:55&termsVersion=v1.1",
 					"protocol": "https",
 					"host": [
 						"rgw-of",
@@ -263,7 +275,7 @@
 					"query": [
 						{
 							"key": "financialInstitutionId",
-							"value": "9111"
+							"value": "374651"
 						},
 						{
 							"key": "codeChallenge",
@@ -283,7 +295,7 @@
 						},
 						{
 							"key": "termsDate",
-							"value": "2024-07-09T01%3A41%3A55.237Z"
+							"value": "2024-07-09T01:34:55"
 						},
 						{
 							"key": "termsVersion",
@@ -337,7 +349,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co/ach/pib/autorizador/v1/redirect-auth-url?financialInstitutionId=9111&codeChallenge=Xmegaq5oIYNP_SddrmnE-NSvrGuDC3AfVnC3CartlbY&codeChallengeMethod=S256&redirectUri=https%3A%2F%2Finiciacionpagosopftest.achcolombia.com.co%3A8444%2Fcallback&consentId=a8ca63e1-5fb4-4d6e-9067-ade5c95d0098&termsDate=2024-07-09T01%3A41%3A55.237Z&termsVersion=v1.1",
+					"raw": "https://rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co/ach/pib/autorizador/v1/redirect-auth-url?financialInstitutionId=374651&codeChallenge=Xmegaq5oIYNP_SddrmnE-NSvrGuDC3AfVnC3CartlbY&codeChallengeMethod=S256&redirectUri=https%3A%2F%2Finiciacionpagosopftest.achcolombia.com.co%3A8444%2Fcallback&consentId=a8ca63e1-5fb4-4d6e-9067-ade5c95d0098&termsDate=2024-07-09T01:34:55&termsVersion=v1.1",
 					"protocol": "https",
 					"host": [
 						"rgw-of",
@@ -359,7 +371,7 @@
 					"query": [
 						{
 							"key": "financialInstitutionId",
-							"value": "9111"
+							"value": "374651"
 						},
 						{
 							"key": "codeChallenge",
@@ -379,7 +391,7 @@
 						},
 						{
 							"key": "termsDate",
-							"value": "2024-07-09T01%3A41%3A55.237Z"
+							"value": "2024-07-09T01:34:55"
 						},
 						{
 							"key": "termsVersion",

@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "427dc620-779f-40d7-9760-cb7915f588f8",
+		"_postman_id": "7502498f-2300-4515-9591-aaf7b94be2eb",
 		"name": "Header banks codigos 401",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "29460625",
-		"_collection_link": "https://red-satellite-829132.postman.co/workspace/Finance-automatizacion~0b159870-f441-4137-ade7-cda25e7bab86/collection/29460625-427dc620-779f-40d7-9760-cb7915f588f8?action=share&source=collection_link&creator=29460625"
+		"_exporter_id": "34505292",
+		"_collection_link": "https://pruebas-1655.postman.co/workspace/Open-Finance-Automatizaci%25C3%25B3n~293f54ff-9360-42e6-8d03-de8e7f26e20f/collection/34505292-7502498f-2300-4515-9591-aaf7b94be2eb?action=share&source=collection_link&creator=34505292"
 	},
 	"item": [
 		{
@@ -48,7 +48,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "{{Authorization}}",
+							"value": "{{access_token}}",
 							"type": "string"
 						}
 					]

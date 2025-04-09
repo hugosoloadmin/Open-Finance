@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "ea15ef4c-1105-491e-9a80-e60f907290a9",
+		"_postman_id": "64d89260-bb70-4a98-a97a-5eb722cc247c",
 		"name": "Header banks codigos 400",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "29460625",
-		"_collection_link": "https://red-satellite-829132.postman.co/workspace/Finance-automatizacion~0b159870-f441-4137-ade7-cda25e7bab86/collection/29460625-ea15ef4c-1105-491e-9a80-e60f907290a9?action=share&source=collection_link&creator=29460625"
+		"_exporter_id": "34505292",
+		"_collection_link": "https://pruebas-1655.postman.co/workspace/Open-Finance-Automatizaci%25C3%25B3n~293f54ff-9360-42e6-8d03-de8e7f26e20f/collection/34505292-64d89260-bb70-4a98-a97a-5eb722cc247c?action=share&source=collection_link&creator=34505292"
 	},
 	"item": [
 		{
@@ -48,7 +48,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "{{Authorization}}",
+							"value": "{{access_token}}",
 							"type": "string"
 						}
 					]
