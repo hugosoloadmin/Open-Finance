@@ -1,1 +1,0 @@
-{"meta":{"messageUid":"4d1199d3-b0db-41d7-aeab-f7466f6a2b08","requestDate":"2024-11-20T14:44:07","requestAppId":null},"data":{"financialInstitutions":[{"financialInstitutionId":"1001","financialInstitutionName":"Bancolombia SA"},{"financialInstitutionId":"9111","financialInstitutionName":"Banka"}]}}

@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "68aef025-9431-4005-8a39-f3da5c6c413e",
+		"_postman_id": "2c6a1294-0df1-4194-8e66-8bbf44ee5c2a",
 		"name": "GET 401 HU014",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "31315694",
-		"_collection_link": "https://warped-rocket-761289.postman.co/workspace/81e524ff-75cf-4572-9434-5fb1db1b5b7e/collection/31315694-68aef025-9431-4005-8a39-f3da5c6c413e?action=share&source=collection_link&creator=31315694"
+		"_exporter_id": "34505292",
+		"_collection_link": "https://pruebas-1655.postman.co/workspace/Open-Finance-Automatizaci%25C3%25B3n~293f54ff-9360-42e6-8d03-de8e7f26e20f/collection/34505292-2c6a1294-0df1-4194-8e66-8bbf44ee5c2a?action=share&source=collection_link&creator=34505292"
 	},
 	"item": [
 		{
@@ -29,14 +29,7 @@
 			],
 			"request": {
 				"auth": {
-					"type": "bearer",
-					"bearer": [
-						{
-							"key": "token",
-							"value": "{{Authorization}}",
-							"type": "string"
-						}
-					]
+					"type": "noauth"
 				},
 				"method": "GET",
 				"header": [
@@ -62,7 +55,7 @@
 					}
 				],
 				"url": {
-					"raw": "https://rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co/ach/pib/autorizador/v1/redirect-auth-url?financialInstitutionId=9111&codeChallenge=Xmegaq5oIYNP_SddrmnE-NSvrGuDC3AfVnC3CartlbY&codeChallengeMethod=S256&redirectUri=https%3A%2F%2Finiciacionpagosopftest.achcolombia.com.co%3A8444%2Fcallback&consentId=a8ca63e1-5fb4-4d6e-9067-ade5c95d0098&termsDate=2024-07-09T01%3A41%3A55.237Z&termsVersion=v1.1",
+					"raw": "https://rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co/ach/pib/autorizador/v1/redirect-auth-url?financialInstitutionId=374651&codeChallenge=Xmegaq5oIYNP_SddrmnE-NSvrGuDC3AfVnC3CartlbY&codeChallengeMethod=S256&redirectUri=https%3A%2F%2Finiciacionpagosopftest.achcolombia.com.co%3A8444%2Fcallback&consentId=a8ca63e1-5fb4-4d6e-9067-ade5c95d0098&termsDate=2025-03-23T08:23:44&termsVersion=v1.1",
 					"protocol": "https",
 					"host": [
 						"rgw-of",
@@ -84,7 +77,7 @@
 					"query": [
 						{
 							"key": "financialInstitutionId",
-							"value": "9111"
+							"value": "374651"
 						},
 						{
 							"key": "codeChallenge",
@@ -104,7 +97,7 @@
 						},
 						{
 							"key": "termsDate",
-							"value": "2024-07-09T01%3A41%3A55.237Z"
+							"value": "2025-03-23T08:23:44"
 						},
 						{
 							"key": "termsVersion",

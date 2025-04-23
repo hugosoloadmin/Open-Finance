@@ -1,1 +1,0 @@
-{"meta":{"messageUid":"1d7af53e-fe20-419f-be67-24c13a7b5782","requestDate":"2024-11-20T14:44:11","requestAppId":null},"statusCode":502,"statusDesc":"Bad Gateway","errors":[{"code":"500","detail":"Could not connect to endpoint ; URL Open error"}]}

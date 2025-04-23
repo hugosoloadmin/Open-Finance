@@ -1,13 +1,14 @@
 {
 	"info": {
-		"_postman_id": "8e4949f2-ef14-4f5e-921e-226b9c3b5057",
-		"name": "PUT Errores 400",
+		"_postman_id": "710d0cd0-43c9-46c6-9f09-b6763480ccd3",
+		"name": "PUT Errores 400 Body",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "34505292"
+		"_exporter_id": "34505292",
+		"_collection_link": "https://pruebas-1655.postman.co/workspace/Open-Finance-Automatizaci%25C3%25B3n~293f54ff-9360-42e6-8d03-de8e7f26e20f/collection/34505292-710d0cd0-43c9-46c6-9f09-b6763480ccd3?action=share&source=collection_link&creator=34505292"
 	},
 	"item": [
 		{
-			"name": "PUT Codigo 400",
+			"name": "PUT Codigo 400 Body",
 			"event": [
 				{
 					"listen": "test",
@@ -173,8 +174,8 @@
 							]
 						}
 					},
-					"_postman_previewlanguage": "",
-					"header": "",
+					"_postman_previewlanguage": "Text",
+					"header": [],
 					"cookie": [],
 					"body": ""
 				}

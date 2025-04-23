@@ -1,8 +1,0 @@
-// Crear una nueva fecha
-var fecha = new Date();
-
-// Formatear la fecha en el formato deseado (YYYY-MM-DDTHH:MM:SS)
-var fechaFormateada = fecha.toISOString().slice(0, 19);
-
-// Guardar la fecha en una variable de entorno o local
-pm.environment.set("$isoTimestamp", fechaFormateada);

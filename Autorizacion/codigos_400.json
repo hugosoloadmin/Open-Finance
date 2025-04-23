@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "21afb837-c29e-4307-ad95-b6966fd058d5",
+		"_postman_id": "a3e9d3ff-ddae-468a-9229-9fa7c1915089",
 		"name": "Errores 400",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "29460625",
-		"_collection_link": "https://red-satellite-829132.postman.co/workspace/Finance-automatizacion~0b159870-f441-4137-ade7-cda25e7bab86/collection/29460625-21afb837-c29e-4307-ad95-b6966fd058d5?action=share&source=collection_link&creator=29460625"
+		"_exporter_id": "34505292",
+		"_collection_link": "https://pruebas-1655.postman.co/workspace/Open-Finance-Automatizaci%25C3%25B3n~293f54ff-9360-42e6-8d03-de8e7f26e20f/collection/34505292-a3e9d3ff-ddae-468a-9229-9fa7c1915089?action=share&source=collection_link&creator=34505292"
 	},
 	"item": [
 		{
@@ -51,12 +51,12 @@
 					"urlencoded": [
 						{
 							"key": "client_id",
-							"value": "moniJWT",
+							"value": "{{client_id}}",
 							"type": "text"
 						},
 						{
 							"key": "client_assertion_type",
-							"value": "urn:ietf:params:oauth:client-assertion-type:jwt-bearer",
+							"value": "{{client_assertion_type}}",
 							"type": "text"
 						},
 						{

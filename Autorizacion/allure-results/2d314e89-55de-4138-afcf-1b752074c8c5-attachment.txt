@@ -1,1 +1,0 @@
-{"meta":{"messageUid":"null","requestDate":"2024-11-20T14:43:46","requestAppId":null},"statusCode":400,"statusDesc":"BadRequestError","errors":[{"code":400,"detail":"x-fapi-interaction-id invalido"}]}

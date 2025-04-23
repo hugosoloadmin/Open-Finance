@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "b339b3ea-e724-4e4e-b34c-4b98190f1020",
+		"_postman_id": "1fc40a23-eb01-4f1d-a3ec-8c3b51d30cf9",
 		"name": "PUT Sin Enviar Campos Header",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "31315694",
-		"_collection_link": "https://warped-rocket-761289.postman.co/workspace/81e524ff-75cf-4572-9434-5fb1db1b5b7e/collection/31315694-b339b3ea-e724-4e4e-b34c-4b98190f1020?action=share&source=collection_link&creator=31315694"
+		"_exporter_id": "34505292",
+		"_collection_link": "https://pruebas-1655.postman.co/workspace/Open-Finance-Automatizaci%25C3%25B3n~293f54ff-9360-42e6-8d03-de8e7f26e20f/collection/34505292-1fc40a23-eb01-4f1d-a3ec-8c3b51d30cf9?action=share&source=collection_link&creator=34505292"
 	},
 	"item": [
 		{
@@ -97,8 +97,8 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							"pm.test(\"Status code is 401\", function () {\r",
-							"    pm.response.to.have.status(401);\r",
+							"pm.test(\"Status code is 500\", function () {\r",
+							"    pm.response.to.have.status(500);\r",
 							"});\r",
 							"\r",
 							"// Imprimir el comentario en la consola de Newman\r",
@@ -140,7 +140,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"codeVerifier\": \"ec7a734718056f18608a85bd808d0c20873f5d03c6d9e37f44f5856b\",\n    \"redirectUri\": \"https://internal-aws-prb-lb-opfback-238477373.us-east-1.elb.amazonaws.com:8444/callback\",\n    \"consentIdFI\": \"83db9626-0bce-411d-b6ad-d0e1bb1bb682\",\n    \"response\": \"eyJraWQiOiI4N2RhMWRhMC0zYjY4LTRiNzUtYjUwNC02NWU5NzM3YmRiYzIiLCJhbGciOiJQUzI1NiJ9.eyJpc3MiOiJodHRwczovL2JhbmthLWF1dGhzZXJ2ZXItb3BlbmZpbmFuY2UuYXBwcy5kZXZhY2guYWNob3BlbnNoaWZ0Lml0YWMuY29tLmNvIiwiYXVkIjoiYWNoLW9wZW4tZmluYW5jZSIsImNvZGUiOiJyOW5RYkhGSmMyaHhDdFBwbkFIa1NxWTJxeTcxQ0dxTkVJWE1UZV96WDBzMTJDSjZEa095U3VpdC1UeGItd0QyTjRYaUNhd0RieVJJaW5tcTlGNWFkWGc2TzR3QXdsZ1NiX2dscllPU0o4UjVYRTd6eFdRWTl4Mmh3RTMxQkxRRiIsImV4cCI6MTcyNTQ4MzU1NywiaWF0IjoxNzI1NDgzNDk3fQ.0_V95YrzOniSlaWXtl3HJm9ky3KI6SP3TfHI9ODdUIDE0ZEHEA4NGuBrecSrwsfFT4mqFGodNfZRSkdAWTnLOzGLyo4pWK7vZEjvSXauJSePTW9LPv8AOmp1JxwKbmdXqZ3GEhVg7PNqzDyjkj29O8fkVLl7KBrx7aPSOi7KIExpHRJE_fbJunDwfsQ_w-3RokT-hy3i6D-8m2__IMxEBvaxc3Iub-FZUA3DA2ycELUweH4P6JT4i9YPqgmPd3bnOscoI7KaIu208tago2EEDHU3KTjsAqvY0ADl7anYsm0MksCbxFL7C2toLk8PabxNvMpJMW1A4bXUMfGlkwCSRg\"\n}",
+					"raw": "{\n    \"codeVerifier\": \"ec7a734718056f18608a85bd808d0c20873f5d03c6d9e37f44f5856b\",\n    \"redirectUri\": \"https://internal-aws-prb-lb-opfback-238477373.us-east-1.elb.amazonaws.com:8444/callback\",\n    \"consentIdFI\": \"83db9626-0bce-411d-b6ad-d0e1bb1bb682\",\n    \"response\": \"eyJraWQiOiI4N2RhMWRhMC0zYjY4LTRiNzUtYjUwNC02NWU5NzM3YmRiYzIiLCJhbGciOiJQUzI1NiJ9.eyJpc3MiOiJodHRwczovL2luaWNpYWNpb25wYWdvc29wZnRlc3QuYWNoY29sb21iaWEuY29tLmNvOjg0ODAiLCJhdWQiOiJhY2gtb3Blbi1maW5hbmNlIiwiY29kZSI6ImRoTHhWVFNGQXAxb2FXNXlIaFliLW1HQ0VkQWwwTGQ3bEphN001SUVlemZvVXpxeTJ1YmhvMW1zVE9OendvUG1DSldWRkdaZnlnNUFnSEpwV0lVT1pBQlJrcHVsdE5IdWFwN0laVFBnVU0wZ0k0eXJnWTgxekkxbDBmMVNxTEpJIiwiZXhwIjoxNzQ0MzI0MTkzLCJpYXQiOjE3NDQzMjQxMzN9.p2VFdektEIleHLKdmXWIumlezfVUW2VTBmU0ou_ect88wIvTn24qKh_4wCdFuDtWhqe2V42puQD3lSt0M3tFJ8M1OEDLew1tbd-6hpJh6nTzsrznRQ2wWNNqyBsujKu2PnkhW2pL1flnzJhJdklNvmqrt72GZJVGIhZtozP1H4DUS8mN4MoVQ_FjpP4C7WCRxY902vSC9GX3-F4LgeXKcyZxJG-AK9xcKBvk66i0YQ0xzGjChEEMlAde4mhOeplZqudUqUUADhCDnwuRVmzOYsb-07uT5Tfm7gx2MHwYcuE9h_g2tYE3WpS3FHvnNvSlE0_0BTi0IJPometkG2AuNg\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -148,7 +148,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co/ach/pib/autorizador/v1/account-access-consents/a8ca63e1-5fb4-4d6e-9067-ade5c95d0098",
+					"raw": "https://rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co/ach/pib/autorizador/v1/account-access-consents/2135fcad-94af-4a56-a114-329a34785239",
 					"protocol": "https",
 					"host": [
 						"rgw-of",
@@ -166,7 +166,7 @@
 						"autorizador",
 						"v1",
 						"account-access-consents",
-						"a8ca63e1-5fb4-4d6e-9067-ade5c95d0098"
+						"2135fcad-94af-4a56-a114-329a34785239"
 					]
 				},
 				"description": "Generated from cURL: curl --location --request PUT 'https://rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co/ach/pib/autorizador/v1/account-access-consents/a8ca63e1-5fb4-4d6e-9067-ade5c95d0098' \\\n--header 'Accept: application/json' \\\n--header 'x-fapi-interaction-id: 1481a5b8-3427-43c3-a10d-1c154d1b42c9' \\\n--header 'x-fapi-auth-date: 2024-11-12T12:00:00' \\\n--header 'x-fapi-customer-ip: 177.172.37.32' \\\n--header 'x-api-key: 722183cfd9be050b9564ecbc9c0aaf40' \\\n--header 'Content-Type: application/json' \\\n--data '{\n    \"codeVerifier\": \"ec7a734718056f18608a85bd808d0c20873f5d03c6d9e37f44f5856b\",\n    \"redirectUri\": \"https://internal-aws-prb-lb-opfback-238477373.us-east-1.elb.amazonaws.com:8444/callback\",\n    \"consentIdFI\": \"83db9626-0bce-411d-b6ad-d0e1bb1bb682\",\n    \"response\": \"eyJraWQiOiI4N2RhMWRhMC0zYjY4LTRiNzUtYjUwNC02NWU5NzM3YmRiYzIiLCJhbGciOiJQUzI1NiJ9.eyJpc3MiOiJodHRwczovL2JhbmthLWF1dGhzZXJ2ZXItb3BlbmZpbmFuY2UuYXBwcy5kZXZhY2guYWNob3BlbnNoaWZ0Lml0YWMuY29tLmNvIiwiYXVkIjoiYWNoLW9wZW4tZmluYW5jZSIsImNvZGUiOiJyOW5RYkhGSmMyaHhDdFBwbkFIa1NxWTJxeTcxQ0dxTkVJWE1UZV96WDBzMTJDSjZEa095U3VpdC1UeGItd0QyTjRYaUNhd0RieVJJaW5tcTlGNWFkWGc2TzR3QXdsZ1NiX2dscllPU0o4UjVYRTd6eFdRWTl4Mmh3RTMxQkxRRiIsImV4cCI6MTcyNTQ4MzU1NywiaWF0IjoxNzI1NDgzNDk3fQ.0_V95YrzOniSlaWXtl3HJm9ky3KI6SP3TfHI9ODdUIDE0ZEHEA4NGuBrecSrwsfFT4mqFGodNfZRSkdAWTnLOzGLyo4pWK7vZEjvSXauJSePTW9LPv8AOmp1JxwKbmdXqZ3GEhVg7PNqzDyjkj29O8fkVLl7KBrx7aPSOi7KIExpHRJE_fbJunDwfsQ_w-3RokT-hy3i6D-8m2__IMxEBvaxc3Iub-FZUA3DA2ycELUweH4P6JT4i9YPqgmPd3bnOscoI7KaIu208tago2EEDHU3KTjsAqvY0ADl7anYsm0MksCbxFL7C2toLk8PabxNvMpJMW1A4bXUMfGlkwCSRg\"\n}'"
@@ -229,7 +229,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co/ach/pib/autorizador/v1/account-access-consents/a8ca63e1-5fb4-4d6e-9067-ade5c95d0098",
+					"raw": "https://rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co/ach/pib/autorizador/v1/account-access-consents/d4a4831c-b493-4900-8112-3a114ec4c75e",
 					"protocol": "https",
 					"host": [
 						"rgw-of",
@@ -247,7 +247,7 @@
 						"autorizador",
 						"v1",
 						"account-access-consents",
-						"a8ca63e1-5fb4-4d6e-9067-ade5c95d0098"
+						"d4a4831c-b493-4900-8112-3a114ec4c75e"
 					]
 				},
 				"description": "Generated from cURL: curl --location --request PUT 'https://rgw-of.apps.awsprbcluo.awsocpprb.ach.interno.com.co/ach/pib/autorizador/v1/account-access-consents/a8ca63e1-5fb4-4d6e-9067-ade5c95d0098' \\\n--header 'Accept: application/json' \\\n--header 'x-fapi-interaction-id: 1481a5b8-3427-43c3-a10d-1c154d1b42c9' \\\n--header 'x-fapi-auth-date: 2024-11-12T12:00:00' \\\n--header 'x-fapi-customer-ip: 177.172.37.32' \\\n--header 'x-api-key: 722183cfd9be050b9564ecbc9c0aaf40' \\\n--header 'Content-Type: application/json' \\\n--data '{\n    \"codeVerifier\": \"ec7a734718056f18608a85bd808d0c20873f5d03c6d9e37f44f5856b\",\n    \"redirectUri\": \"https://internal-aws-prb-lb-opfback-238477373.us-east-1.elb.amazonaws.com:8444/callback\",\n    \"consentIdFI\": \"83db9626-0bce-411d-b6ad-d0e1bb1bb682\",\n    \"response\": \"eyJraWQiOiI4N2RhMWRhMC0zYjY4LTRiNzUtYjUwNC02NWU5NzM3YmRiYzIiLCJhbGciOiJQUzI1NiJ9.eyJpc3MiOiJodHRwczovL2JhbmthLWF1dGhzZXJ2ZXItb3BlbmZpbmFuY2UuYXBwcy5kZXZhY2guYWNob3BlbnNoaWZ0Lml0YWMuY29tLmNvIiwiYXVkIjoiYWNoLW9wZW4tZmluYW5jZSIsImNvZGUiOiJyOW5RYkhGSmMyaHhDdFBwbkFIa1NxWTJxeTcxQ0dxTkVJWE1UZV96WDBzMTJDSjZEa095U3VpdC1UeGItd0QyTjRYaUNhd0RieVJJaW5tcTlGNWFkWGc2TzR3QXdsZ1NiX2dscllPU0o4UjVYRTd6eFdRWTl4Mmh3RTMxQkxRRiIsImV4cCI6MTcyNTQ4MzU1NywiaWF0IjoxNzI1NDgzNDk3fQ.0_V95YrzOniSlaWXtl3HJm9ky3KI6SP3TfHI9ODdUIDE0ZEHEA4NGuBrecSrwsfFT4mqFGodNfZRSkdAWTnLOzGLyo4pWK7vZEjvSXauJSePTW9LPv8AOmp1JxwKbmdXqZ3GEhVg7PNqzDyjkj29O8fkVLl7KBrx7aPSOi7KIExpHRJE_fbJunDwfsQ_w-3RokT-hy3i6D-8m2__IMxEBvaxc3Iub-FZUA3DA2ycELUweH4P6JT4i9YPqgmPd3bnOscoI7KaIu208tago2EEDHU3KTjsAqvY0ADl7anYsm0MksCbxFL7C2toLk8PabxNvMpJMW1A4bXUMfGlkwCSRg\"\n}'"

@@ -1,0 +1,13 @@
+{
+    "Date": "Wed, 23 Apr 2025 17:46:47 GMT",
+    "Content-Type": "application/json",
+    "Content-Length": "79",
+    "Connection": "keep-alive",
+    "Cache-Control": "no-store",
+    "Pragma": "no-cache",
+    "Referrer-Policy": "no-referrer",
+    "Strict-Transport-Security": "max-age=31536000; includeSubDomains",
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-XSS-Protection": "1; mode=block"
+}
